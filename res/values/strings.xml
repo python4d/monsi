@@ -2,11 +2,19 @@
 <resources>
 
     <string name="app_name" translatable="false">MonSi</string>
-    <string name="action_settings" translatable="false">Settings</string>
+    <string name="action_aide" translatable="false">Aide - Règles du Jeu</string>
+    
+    <string name="aide" translatable="false">"Description:\nDurée d'une partie entre 2 secondes et 10 minutes max.\n\nInstructions:\n\
+1 -Appuyez sur le billet 200€ pour lancer l'appli MonSi !\n\
+2- Appuyez, dans l'ordre, sur les chiffres représentés par les pièces de monnaie de 1€.\n\
+3- Vous avez quelques secondes pour mémoriser la position des chiffres présentés avant qu'ils ne disparaissent.\n\
+4- Plus vous êtes rapide, plus vous marquez de points.\n\n\
+Option:\n\
+Lancez-vous un défi planétaire en battant le record du jeu enregistré sur le WEB !"</string>
     <string name="hello_world" translatable="false">Hello world!</string>
     <string name="lancez_monsi_" translatable="false">Lancez MonSi !\npour commencer la partie !"</string>
     <string name="level_" translatable="false">Level =</string>
     <string name="score_" translatable="false">Score =</string>
-
+    <string name="ca_app_pub" translatable="false">ca-app-pub-1008481061910472/7440391314</string>
 </resources>
  

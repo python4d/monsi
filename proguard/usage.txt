@@ -390,9 +390,6 @@ android.support.v4.print.PrintHelper$PrintHelperStubImpl
 android.support.v4.print.PrintHelper$PrintHelperVersionImpl
 android.support.v4.print.PrintHelperKitkat
 android.support.v4.print.PrintHelperKitkat$1
-android.support.v4.print.PrintHelperKitkat$2
-android.support.v4.print.PrintHelperKitkat$2$1
-android.support.v4.print.PrintHelperKitkat$2$1$1
 android.support.v4.text.BidiFormatter
 android.support.v4.text.BidiFormatter$1
 android.support.v4.text.BidiFormatter$Builder
@@ -1274,7 +1271,6 @@ com.google.android.gms.common.GooglePlayServicesUtil:
     public static java.lang.String getErrorString(int)
     public static android.app.PendingIntent getErrorPendingIntent(int,android.content.Context,int)
     public static android.app.Dialog getErrorDialog(int,android.app.Activity,int,android.content.DialogInterface$OnCancelListener)
-    public static boolean isUserRecoverableError(int)
     public static java.lang.String getOpenSourceSoftwareLicenseInfo(android.content.Context)
     public static android.content.res.Resources getRemoteResource(android.content.Context)
 com.google.android.gms.common.OnStatusReceivedCallback
@@ -3102,7 +3098,8 @@ com.python4d.monsi.R$string
 com.python4d.monsi.R$style
 com.python4d.monsi.R$styleable
 com.python4d.monsi.Utils:
-    7:7:public Utils()
+    protected static final int REQUEST_GOOGLE_PLAY_SERVICES
+    protected static final int SERVICE_MISSING
 org.apache.commons.net.DatagramSocketClient
 org.apache.commons.net.DatagramSocketFactory
 org.apache.commons.net.DefaultDatagramSocketFactory

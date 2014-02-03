@@ -406,22 +406,25 @@ containing a value of this type.
         public static final int LinearLayout1=0x7f07000b;
         public static final int LinearLayout2=0x7f07000f;
         public static final int LinearLayout3=0x7f070013;
+        public static final int LinearLayoutLaunchVolume=0x7f070017;
         public static final int LinearLayoutScore=0x7f070005;
-        public static final int action_settings=0x7f07001b;
-        public static final int adView=0x7f07001a;
-        public static final int buttonStart=0x7f070017;
+        public static final int action_aide=0x7f07001e;
+        public static final int adView=0x7f07001d;
+        public static final int buttonStart=0x7f07001a;
         public static final int hybrid=0x7f070004;
         public static final int none=0x7f070000;
         public static final int normal=0x7f070001;
         public static final int satellite=0x7f070002;
+        public static final int seekBarVolume=0x7f070019;
         public static final int terrain=0x7f070003;
         public static final int textHighScore=0x7f07000a;
         public static final int textHighScoreWeb=0x7f070006;
-        public static final int textIntro=0x7f070018;
+        public static final int textIntro=0x7f07001b;
         public static final int textLevel=0x7f070009;
         public static final int textScore=0x7f070007;
         public static final int textTime=0x7f070008;
-        public static final int textWebPython=0x7f070019;
+        public static final int textVolume=0x7f070018;
+        public static final int textWebPython=0x7f07001c;
     }
     public static final class integer {
         public static final int google_play_services_version=0x7f090000;
@@ -441,7 +444,8 @@ containing a value of this type.
         public static final int up=0x7f050005;
     }
     public static final class string {
-        public static final int action_settings=0x7f08001b;
+        public static final int action_aide=0x7f08001b;
+        public static final int aide=0x7f08001c;
         public static final int app_name=0x7f08001a;
         /**   Title for notification shown when GooglePlayServices needs to be
         enabled for a application to work. [CHAR LIMIT=70] 
@@ -466,6 +470,7 @@ containing a value of this type.
         [CHAR LIMIT=70] 
          */
         public static final int auth_client_using_bad_version_title=0x7f080014;
+        public static final int ca_app_pub=0x7f080021;
         /**  Button in confirmation dialog to enable Google Play services.  Clicking it
         will direct user to application settings of Google Play services where they
         can enable it [CHAR LIMIT=40] 
@@ -537,10 +542,10 @@ containing a value of this type.
         /**  Long form sign-in button text [CHAR LIMIT=30] 
          */
         public static final int common_signin_button_text_long=0x7f080013;
-        public static final int hello_world=0x7f08001c;
-        public static final int lancez_monsi_=0x7f08001d;
-        public static final int level_=0x7f08001e;
-        public static final int score_=0x7f08001f;
+        public static final int hello_world=0x7f08001d;
+        public static final int lancez_monsi_=0x7f08001e;
+        public static final int level_=0x7f08001f;
+        public static final int score_=0x7f080020;
     }
     public static final class style {
         /** 

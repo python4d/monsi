@@ -2,18 +2,13 @@ package com.python4d.monsi;
 
 import java.util.Random;
 
-import com.python4d.monsi.FTPConnect;
-import com.python4d.monsi.R;
-
 import android.content.Context;
-import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.os.AsyncTask;
 import android.os.SystemClock;
 import android.view.animation.Animation;
-import android.os.AsyncTask.Status;
 
-public final class StateMachine extends MainActivity{
+public final class StateMachine {
 	MainActivity p;
 
 	StateMachine(MainActivity MainActivityParent){
@@ -32,8 +27,6 @@ public final class StateMachine extends MainActivity{
 		int i_animation_intro = 0;
 		long lCountms = 0;
 		Random r = new Random();
-		SharedPreferences.Editor editor = null;
-		SharedPreferences preferences = null;
 		@Override
 		public void run() {
 			if (p.bPause){
@@ -152,7 +145,7 @@ public final class StateMachine extends MainActivity{
 							    // START NEW TASK HERE
 							}
 							p.ftp=null;
-					        p.ftp=(FTPConnect) new FTPConnect(p).execute( highscore[0],highscore[1]);
+					        p.ftp=(FTPConnect) new FTPConnect(p).execute( p.highscore[0],p.highscore[1]);
 						}
 
 						p.textIntro.setText("Game Over");
@@ -223,9 +216,9 @@ public final class StateMachine extends MainActivity{
 					    // START NEW TASK HERE
 					}
 					p.ftp=null;
-					ma.runOnUiThread(new Runnable() {
+					p.runOnUiThread(new Runnable() {
 						public void run() {
-							p.ftp=(FTPConnect) new FTPConnect(p).execute( highscore[0],highscore[1]);
+							p.ftp=(FTPConnect) new FTPConnect(p).execute( p.highscore[0],p.highscore[1]);
 						}
 					});
 			        break;

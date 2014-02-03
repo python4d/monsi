@@ -383,6 +383,7 @@ com.python4d.monsi.AutoResizeTextView: void setAddEllipsis(boolean)
 com.python4d.monsi.AutoResizeTextView: boolean getAddEllipsis()
 com.python4d.monsi.MainActivity
 com.python4d.monsi.MainActivity: MainActivity()
+com.python4d.monsi.MainActivity: void Aide(android.view.MenuItem)
 com.python4d.monsi.R$anim: int anim_bouton
 com.python4d.monsi.R$anim: int anim_bouton_retourne
 com.python4d.monsi.R$anim: int anim_textintro
@@ -626,14 +627,16 @@ com.python4d.monsi.R$id: int Button08
 com.python4d.monsi.R$id: int LinearLayout1
 com.python4d.monsi.R$id: int LinearLayout2
 com.python4d.monsi.R$id: int LinearLayout3
+com.python4d.monsi.R$id: int LinearLayoutLaunchVolume
 com.python4d.monsi.R$id: int LinearLayoutScore
-com.python4d.monsi.R$id: int action_settings
+com.python4d.monsi.R$id: int action_aide
 com.python4d.monsi.R$id: int adView
 com.python4d.monsi.R$id: int buttonStart
 com.python4d.monsi.R$id: int hybrid
 com.python4d.monsi.R$id: int none
 com.python4d.monsi.R$id: int normal
 com.python4d.monsi.R$id: int satellite
+com.python4d.monsi.R$id: int seekBarVolume
 com.python4d.monsi.R$id: int terrain
 com.python4d.monsi.R$id: int textHighScore
 com.python4d.monsi.R$id: int textHighScoreWeb
@@ -641,6 +644,7 @@ com.python4d.monsi.R$id: int textIntro
 com.python4d.monsi.R$id: int textLevel
 com.python4d.monsi.R$id: int textScore
 com.python4d.monsi.R$id: int textTime
+com.python4d.monsi.R$id: int textVolume
 com.python4d.monsi.R$id: int textWebPython
 com.python4d.monsi.R$integer: int google_play_services_version
 com.python4d.monsi.R$layout: int activity_main
@@ -651,7 +655,8 @@ com.python4d.monsi.R$raw: int hurry_up
 com.python4d.monsi.R$raw: int pacman_death
 com.python4d.monsi.R$raw: int ungh
 com.python4d.monsi.R$raw: int up
-com.python4d.monsi.R$string: int action_settings
+com.python4d.monsi.R$string: int action_aide
+com.python4d.monsi.R$string: int aide
 com.python4d.monsi.R$string: int app_name
 com.python4d.monsi.R$string: int auth_client_needs_enabling_title
 com.python4d.monsi.R$string: int auth_client_needs_installation_title
@@ -659,6 +664,7 @@ com.python4d.monsi.R$string: int auth_client_needs_update_title
 com.python4d.monsi.R$string: int auth_client_play_services_err_notification_msg
 com.python4d.monsi.R$string: int auth_client_requested_by_msg
 com.python4d.monsi.R$string: int auth_client_using_bad_version_title
+com.python4d.monsi.R$string: int ca_app_pub
 com.python4d.monsi.R$string: int common_google_play_services_enable_button
 com.python4d.monsi.R$string: int common_google_play_services_enable_text
 com.python4d.monsi.R$string: int common_google_play_services_enable_title

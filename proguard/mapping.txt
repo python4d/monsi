@@ -1639,13 +1639,14 @@ com.google.android.gms.common.GooglePlayServicesUtil -> com.google.android.gms.c
     byte[] a(android.content.pm.PackageInfo,byte[][]) -> a
     android.content.Intent a(android.content.Context,int,int) -> a
     boolean q(int) -> a
-    int r(int) -> b
+    int r(int) -> c
     boolean aU() -> a
     boolean o(android.content.Context) -> e
     java.lang.String b(android.content.Context,int,int) -> b
     java.lang.String b(android.content.Context,int) -> a
     android.app.Dialog getErrorDialog(int,android.app.Activity,int) -> a
     android.app.Dialog a(int,android.app.Activity,int,android.content.DialogInterface$OnCancelListener,int) -> a
+    boolean isUserRecoverableError(int) -> b
     boolean a(android.content.res.Resources) -> a
     boolean b(android.content.res.Resources) -> b
     android.content.Context getRemoteContext(android.content.Context) -> c
@@ -6479,11 +6480,11 @@ com.python4d.monsi.FTPConnect$4 -> com.python4d.monsi.g:
     com.python4d.monsi.FTPConnect this$0 -> a
     void run() -> run
 com.python4d.monsi.MainActivity -> com.python4d.monsi.MainActivity:
-    int RQS_GooglePlayServices -> a
-    boolean pub -> b
-    android.media.MediaPlayer mPlayer -> c
-    boolean bPause -> d
-    android.view.animation.Animation animBoutonRetourne -> B
+    boolean pub -> a
+    android.media.MediaPlayer mPlayer -> b
+    boolean bPause -> c
+    android.view.animation.Animation animBoutonRetourne -> D
+    android.widget.SeekBar seekbarVolume -> d
     android.view.animation.Animation animTextIntro -> e
     android.widget.Button[] boutonsNomis -> f
     android.widget.Button boutonStart -> g
@@ -6494,34 +6495,39 @@ com.python4d.monsi.MainActivity -> com.python4d.monsi.MainActivity:
     android.widget.TextView textHighScore -> l
     android.widget.TextView textHighScoreWeb -> m
     android.widget.TextView textWebPython -> n
-    java.lang.String sBoutonTouche -> o
-    int fFirstPush -> p
-    int[] highscore -> q
-    java.lang.String[] hs_web -> r
-    android.content.SharedPreferences$Editor editor -> s
-    android.content.SharedPreferences preferences -> t
-    android.os.Handler customHandler -> u
-    com.python4d.monsi.MainActivity ma -> v
+    android.widget.TextView textVolume -> o
+    java.lang.String sBoutonTouche -> p
+    int fFirstPush -> q
+    int[] highscore -> r
+    java.lang.String[] hs_web -> s
+    android.content.SharedPreferences$Editor editor -> t
+    android.content.SharedPreferences preferences -> u
+    android.os.Handler customHandler -> v
     java.lang.String hs_name -> w
     com.python4d.monsi.FTPConnect ftp -> x
-    android.view.View$OnClickListener textWebPythonListener -> y
-    android.view.View$OnClickListener boutonNomisListener -> z
-    android.view.View$OnClickListener firstboutonNomisListener -> A
-    android.view.View$OnClickListener boutonStartListener -> C
-    android.view.animation.Animation$AnimationListener textIntroListener -> D
+    android.view.View$OnClickListener textVolumeListener -> y
+    android.widget.SeekBar$OnSeekBarChangeListener seekbarVolumeListener -> z
+    android.view.View$OnClickListener textWebPythonListener -> A
+    android.view.View$OnClickListener boutonNomisListener -> B
+    android.view.View$OnClickListener firstboutonNomisListener -> C
+    android.view.View$OnClickListener boutonStartListener -> E
+    android.view.animation.Animation$AnimationListener textIntroListener -> F
     void onCreate(android.os.Bundle) -> onCreate
     boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
     void onPause() -> onPause
     void onResume() -> onResume
     void onDestroy() -> onDestroy
     void onStop() -> onStop
+    void Aide(android.view.MenuItem) -> Aide
     android.view.animation.Animation access$0(com.python4d.monsi.MainActivity) -> a
 com.python4d.monsi.MainActivity$1 -> com.python4d.monsi.h:
     com.python4d.monsi.MainActivity this$0 -> a
     void onClick(android.view.View) -> onClick
 com.python4d.monsi.MainActivity$2 -> com.python4d.monsi.i:
     com.python4d.monsi.MainActivity this$0 -> a
-    void onClick(android.view.View) -> onClick
+    void onProgressChanged(android.widget.SeekBar,int,boolean) -> onProgressChanged
+    void onStartTrackingTouch(android.widget.SeekBar) -> onStartTrackingTouch
+    void onStopTrackingTouch(android.widget.SeekBar) -> onStopTrackingTouch
 com.python4d.monsi.MainActivity$3 -> com.python4d.monsi.j:
     com.python4d.monsi.MainActivity this$0 -> a
     void onClick(android.view.View) -> onClick
@@ -6530,16 +6536,22 @@ com.python4d.monsi.MainActivity$4 -> com.python4d.monsi.k:
     void onClick(android.view.View) -> onClick
 com.python4d.monsi.MainActivity$5 -> com.python4d.monsi.l:
     com.python4d.monsi.MainActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.python4d.monsi.MainActivity$6 -> com.python4d.monsi.m:
+    com.python4d.monsi.MainActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.python4d.monsi.MainActivity$7 -> com.python4d.monsi.n:
+    com.python4d.monsi.MainActivity this$0 -> a
     void onAnimationEnd(android.view.animation.Animation) -> onAnimationEnd
     void onAnimationRepeat(android.view.animation.Animation) -> onAnimationRepeat
     void onAnimationStart(android.view.animation.Animation) -> onAnimationStart
-com.python4d.monsi.MainActivity$6 -> com.python4d.monsi.m:
+com.python4d.monsi.MainActivity$8 -> com.python4d.monsi.o:
     com.python4d.monsi.MainActivity this$0 -> a
-    void run() -> run
-com.python4d.monsi.StateMachine -> com.python4d.monsi.n:
-    com.python4d.monsi.MainActivity p -> B
-    java.lang.Runnable updateTimerThread -> C
-com.python4d.monsi.StateMachine$1 -> com.python4d.monsi.o:
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.python4d.monsi.StateMachine -> com.python4d.monsi.p:
+    com.python4d.monsi.MainActivity p -> a
+    java.lang.Runnable updateTimerThread -> b
+com.python4d.monsi.StateMachine$1 -> com.python4d.monsi.q:
     android.media.MediaPlayer mpHurryUp -> a
     int state -> b
     int verif -> c
@@ -6553,18 +6565,26 @@ com.python4d.monsi.StateMachine$1 -> com.python4d.monsi.o:
     int i_animation_intro -> k
     long lCountms -> l
     java.util.Random r -> m
-    android.content.SharedPreferences$Editor editor -> n
-    android.content.SharedPreferences preferences -> o
-    com.python4d.monsi.StateMachine this$0 -> p
+    com.python4d.monsi.StateMachine this$0 -> n
     void run() -> run
     com.python4d.monsi.StateMachine access$0(com.python4d.monsi.StateMachine$1) -> a
-com.python4d.monsi.StateMachine$1$1 -> com.python4d.monsi.p:
+com.python4d.monsi.StateMachine$1$1 -> com.python4d.monsi.r:
     com.python4d.monsi.StateMachine$1 this$1 -> a
     void run() -> run
-com.python4d.monsi.Utils -> com.python4d.monsi.q:
+com.python4d.monsi.Utils -> com.python4d.monsi.s:
+    com.python4d.monsi.MainActivity p -> a
+    java.lang.String DEBUG_TAG -> b
     void playSound(android.content.Context,android.media.MediaPlayer,int) -> a
-com.python4d.monsi.Utils$1 -> com.python4d.monsi.r:
+    void streamVolume(int) -> a
+    boolean checkGooglePlayServicesAvailable() -> a
+    void showGooglePlayServicesAvailabilityErrorDialog(int) -> b
+com.python4d.monsi.Utils$1 -> com.python4d.monsi.t:
     void onCompletion(android.media.MediaPlayer) -> onCompletion
+com.python4d.monsi.Utils$2 -> com.python4d.monsi.u:
+    void run() -> run
+com.python4d.monsi.Utils$3 -> com.python4d.monsi.v:
+    int val$connectionStatusCode -> a
+    void run() -> run
 org.apache.commons.net.MalformedServerReplyException -> a.a.a.a.a:
 org.apache.commons.net.ProtocolCommandEvent -> a.a.a.a.b:
     int __replyCode -> a
