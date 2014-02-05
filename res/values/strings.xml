@@ -12,7 +12,7 @@
 Option:\n\
 Lancez-vous un défi planétaire en battant le record du jeu enregistré sur le WEB !"</string>
     <string name="hello_world" translatable="false">Hello world!</string>
-    <string name="lancez_monsi_" translatable="false">Lancez MonSi !\npour commencer la partie !"</string>
+    <string name="lancez_monsi_" translatable="false">\nLancez MonSi !\n</string>
     <string name="level_" translatable="false">Level =</string>
     <string name="score_" translatable="false">Score =</string>
     <string name="ca_app_pub" translatable="false">ca-app-pub-1008481061910472/7440391314</string>

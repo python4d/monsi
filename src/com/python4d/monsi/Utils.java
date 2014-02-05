@@ -15,12 +15,16 @@ public final class Utils  {
 	protected static final int SERVICE_MISSING =1;
 	static MainActivity p;
 	static String DEBUG_TAG = "MonSi";
+	
+	//constructeur pour récupérer l'activité principale
 	Utils(MainActivity MainActivityParent){
 		Utils.p=MainActivityParent;
 	}
+	
+	// Gestion des sons du jeu Mediaplayer
 	static void playSound(Context context, MediaPlayer mp,int resId) {
 	    mp = MediaPlayer.create(context, resId);
-	    mp.setVolume(0.6f, 0.6f);
+	    //mp.setVolume(0.6f, 0.6f);
 	    mp.start();
 	    mp.setOnCompletionListener(new OnCompletionListener() {
 	        public void onCompletion(MediaPlayer mp) {
@@ -28,6 +32,7 @@ public final class Utils  {
 	        };
 	    });
 	}
+	// Gestion du volume
 	static void streamVolume(int progress){
 	AudioManager audioManager = 
 		    (AudioManager)p.getApplicationContext().getSystemService(Context.AUDIO_SERVICE);

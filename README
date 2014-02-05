@@ -1,14 +1,21 @@
 Version Information:
 ====================
 
+TODO: Gestion rotation tablette, enregistrement des 10 derniers scores,...
+
+v1.05:
+-Meilleur gestion du Volume (utilisation des boutons externes)
+-Nouveau design spéciale "Rémi" pour compabilité 3.2" pouces
+
+
+v1.04:
+-Ajout du contrôle de volume
+-Verification GooglePlayServices >> Compatibilité API4+
+-Ajout du menu "Aide - Règles du Jeu
+
+
+
 v1.03b: 
 Version corrigeant le bug spécial Samsung (MonSi marche partout sur tous les émulteurs soft mais pas sur le hardware Samsung)
 Utilisation de SAMSUNG Remote Test Lab: http://developer.samsung.com/remotetestlab/rtlDeviceList.action qui permet de tester sur du vrai hard.
 Explication du bug : http://stackoverflow.com/questions/6682730/android-android-view-inflateexception-binary-xml-file-line-13-error-inflatin
-
-v1.04b:
--Ajout du contrôle de volume
--Verification GooglePlayServices
--Ajout du menu "Aide - Règles du Jeu
-
-TODO: Gestion rotation tablette, enregistrement des 10 derniers scores,...

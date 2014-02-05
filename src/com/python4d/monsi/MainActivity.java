@@ -7,12 +7,14 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Typeface;
+import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.preference.PreferenceManager;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -62,6 +64,10 @@ public class MainActivity extends Activity {
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, 
         WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        
+        // change the music vol instead of ringtone vol
+        // when hardware volume buttons are pressed
+        setVolumeControlStream(AudioManager.STREAM_MUSIC);
         
         //récupérer le highscore local du téléphone
         preferences = PreferenceManager.getDefaultSharedPreferences(this);
@@ -148,7 +154,7 @@ public class MainActivity extends Activity {
 		@Override
 		public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
 
-			if (textVolume.getTypeface()==Typeface.DEFAULT){
+			if (textVolume.getTypeface()!=Typeface.DEFAULT_BOLD){
 				Utils.streamVolume(progress);
 			}
 	    }
@@ -200,12 +206,7 @@ public class MainActivity extends Activity {
 		};
 	};
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
-		return true;
-	}
+
 	private AnimationListener textIntroListener = new AnimationListener() {
 		public void onAnimationEnd(Animation arg0) {
 
@@ -219,6 +220,8 @@ public class MainActivity extends Activity {
 		}
 
 	};
+	
+	// Gestion de la vie l'activité (cf onCreate)
 	@Override
 	public void onPause() {
 	    super.onPause();  // Always call the superclass method first
@@ -249,6 +252,38 @@ public class MainActivity extends Activity {
 	    bPause=true;
  
     }
+	
+	
+	// Gestion des boutons de Volume pour être en cohérent avec la barre de volume seekbar 
+	@Override
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
+		
+	    switch (keyCode) {
+	    case KeyEvent.KEYCODE_VOLUME_UP:
+    		seekbarVolume.setProgress(seekbarVolume.getProgress()+7);	
+    		if (textVolume.getTypeface()!=Typeface.DEFAULT_BOLD){
+    			return super.onKeyDown(keyCode, event);
+    		}
+	    	return true;
+	    case KeyEvent.KEYCODE_VOLUME_DOWN:
+    		seekbarVolume.setProgress(seekbarVolume.getProgress()-7);	
+    		if (textVolume.getTypeface()!=Typeface.DEFAULT_BOLD){
+    			return super.onKeyDown(keyCode, event);
+    		}
+	    	return true;
+	    default:
+	    	//ne pas suivre la doc qui propose "return false"... 
+	    	//mais cela ne marche pas avec LeaveButtonn ik faut utiliser la méthode parent
+	        return super.onKeyDown(keyCode, event); 
+	    }
+	}
+	// Gestion du Menu
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
+	}
 	public void Aide(MenuItem item){
 		AlertDialog.Builder alertAide=null;
 		bPause=true;
