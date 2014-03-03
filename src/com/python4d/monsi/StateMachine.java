@@ -153,7 +153,9 @@ public final class StateMachine {
 						p.animTextIntro.setRepeatCount(5);
 						p.animTextIntro.setRepeatMode(Animation.REVERSE);
 						p.textIntro.startAnimation(p.animTextIntro);	
-						Utils.playSound((Context) p, p.mPlayer, R.raw.pacman_death);
+						//Utils.playSound((Context) p, p.mPlayer, R.raw.pacman_death);
+						Utils.playSound(Utils.sound_pacman_death);
+						
 						for (int i = 0; i < 9; i++) {
 							p.boutonsNomis[i].setOnClickListener(null);
 							p.boutonsNomis[i].setText(Integer.toString(i+1));
@@ -163,14 +165,16 @@ public final class StateMachine {
 					}
 					if (p.sBoutonTouche!=""){
 						if (sSuite[verif]==Integer.parseInt(p.sBoutonTouche)){
-							Utils.playSound((Context) p, p.mPlayer, R.raw.cerise);
+							//Utils.playSound((Context) p, p.mPlayer, R.raw.cerise);
+							Utils.playSound(Utils.sound_cerise,0.5f);
 							p.boutonsNomis[sSuite[verif]].setText(Integer.toString(verif+1));
 							score+=++verif+(int)((float)time/10.0);
 							p.textScore.setText("Score=" + Integer.toString(score));	
 						}
 						else
 						{
-							Utils.playSound((Context) p, p.mPlayer,  R.raw.ungh);
+							//Utils.playSound((Context) p, p.mPlayer,  R.raw.ungh);
+							Utils.playSound(Utils.sound_ungh,0.2f);
 							
 						}
 						if (verif==nb_boutons){			

@@ -1,8 +1,6 @@
 package com.python4d.monsi;
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.app.Dialog;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -174,7 +172,7 @@ public class MainActivity extends Activity {
 	OnClickListener textWebPythonListener = new OnClickListener() {
 		@Override
 		public void onClick(View v) {
-			Utils.playSound((Context) MainActivity.this, mPlayer, R.raw.pacman_death);
+			Utils.playSound(Utils.sound_pacman_death);
 			Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.Python4D.com"));
 			startActivity(i); 
 		}
@@ -201,7 +199,8 @@ public class MainActivity extends Activity {
 	private OnClickListener boutonStartListener = new OnClickListener() {
 		@Override
 		public void onClick(View v) {
-			Utils.playSound((Context) MainActivity.this, mPlayer, R.raw.up);
+			//Utils.playSound((Context) MainActivity.this, mPlayer, R.raw.up);
+			Utils.playSound(Utils.sound_up);
 			customHandler.postDelayed((new StateMachine(MainActivity.this)).updateTimerThread, 100);
 		};
 	};

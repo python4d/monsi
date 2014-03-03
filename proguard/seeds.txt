@@ -201,6 +201,10 @@ com.google.android.gms.ads.search.SearchAdView: java.lang.String getAdUnitId()
 com.google.android.gms.ads.search.SearchAdView: void setAdListener(com.google.android.gms.ads.AdListener)
 com.google.android.gms.ads.search.SearchAdView: void setAdSize(com.google.android.gms.ads.AdSize)
 com.google.android.gms.ads.search.SearchAdView: void setAdUnitId(java.lang.String)
+com.google.android.gms.cast.ApplicationMetadata
+com.google.android.gms.cast.ApplicationMetadata: android.os.Parcelable$Creator CREATOR
+com.google.android.gms.cast.CastDevice
+com.google.android.gms.cast.CastDevice: android.os.Parcelable$Creator CREATOR
 com.google.android.gms.common.SignInButton: void setSize(int)
 com.google.android.gms.common.SignInButton: void setColorScheme(int)
 com.google.android.gms.common.SignInButton: void setOnClickListener(android.view.View$OnClickListener)
@@ -208,6 +212,8 @@ com.google.android.gms.common.SignInButton: void setEnabled(boolean)
 com.google.android.gms.common.api.Status
 com.google.android.gms.common.data.DataHolder
 com.google.android.gms.common.images.ImageManager$ImageReceiver
+com.google.android.gms.common.images.WebImage
+com.google.android.gms.common.images.WebImage: android.os.Parcelable$Creator CREATOR
 com.google.android.gms.common.internal.safeparcel.SafeParcelable
 com.google.android.gms.drive.Contents
 com.google.android.gms.drive.Contents: android.os.Parcelable$Creator CREATOR
@@ -266,7 +272,7 @@ com.google.android.gms.games.Player
 com.google.android.gms.games.PlayerEntity
 com.google.android.gms.games.PlayerEntity: android.os.Parcelable$Creator CREATOR
 com.google.android.gms.games.b
-com.google.android.gms.games.e
+com.google.android.gms.games.d
 com.google.android.gms.games.multiplayer.Invitation
 com.google.android.gms.games.multiplayer.InvitationEntity
 com.google.android.gms.games.multiplayer.InvitationEntity: android.os.Parcelable$Creator CREATOR
@@ -275,13 +281,13 @@ com.google.android.gms.games.multiplayer.ParticipantEntity
 com.google.android.gms.games.multiplayer.ParticipantEntity: android.os.Parcelable$Creator CREATOR
 com.google.android.gms.games.multiplayer.ParticipantResult
 com.google.android.gms.games.multiplayer.b
-com.google.android.gms.games.multiplayer.e
+com.google.android.gms.games.multiplayer.d
 com.google.android.gms.games.multiplayer.realtime.RealTimeMessage
 com.google.android.gms.games.multiplayer.realtime.RealTimeMessage: android.os.Parcelable$Creator CREATOR
 com.google.android.gms.games.multiplayer.realtime.Room
 com.google.android.gms.games.multiplayer.realtime.RoomEntity
 com.google.android.gms.games.multiplayer.realtime.RoomEntity: android.os.Parcelable$Creator CREATOR
-com.google.android.gms.games.multiplayer.realtime.d
+com.google.android.gms.games.multiplayer.realtime.c
 com.google.android.gms.games.multiplayer.turnbased.TurnBasedMatch
 com.google.android.gms.games.multiplayer.turnbased.TurnBasedMatchEntity
 com.google.android.gms.games.multiplayer.turnbased.a
@@ -290,45 +296,51 @@ com.google.android.gms.internal.bj
 com.google.android.gms.internal.bm
 com.google.android.gms.internal.bz
 com.google.android.gms.internal.cb
-com.google.android.gms.internal.ct
-com.google.android.gms.internal.cv: void setContext(android.content.Context)
-com.google.android.gms.internal.dh$a
-com.google.android.gms.internal.dj
-com.google.android.gms.internal.dz
-com.google.android.gms.internal.eb
-com.google.android.gms.internal.eb$a
-com.google.android.gms.internal.ee$a
-com.google.android.gms.internal.eh
-com.google.android.gms.internal.eh$a
-com.google.android.gms.internal.eh$b
-com.google.android.gms.internal.ek
+com.google.android.gms.internal.cu
+com.google.android.gms.internal.cw: void setContext(android.content.Context)
+com.google.android.gms.internal.dt$a
+com.google.android.gms.internal.dv
+com.google.android.gms.internal.el
+com.google.android.gms.internal.en
+com.google.android.gms.internal.ep
+com.google.android.gms.internal.ep$a
+com.google.android.gms.internal.es$a
+com.google.android.gms.internal.ev
+com.google.android.gms.internal.ev$a
+com.google.android.gms.internal.ev$b
 com.google.android.gms.internal.ey
-com.google.android.gms.internal.fn
-com.google.android.gms.internal.fs
-com.google.android.gms.internal.fu
-com.google.android.gms.internal.fw
-com.google.android.gms.internal.fz
-com.google.android.gms.internal.gb
-com.google.android.gms.internal.gd
-com.google.android.gms.internal.gg
-com.google.android.gms.internal.gs
+com.google.android.gms.internal.fm
+com.google.android.gms.internal.gh
+com.google.android.gms.internal.go
+com.google.android.gms.internal.gt
 com.google.android.gms.internal.gv
 com.google.android.gms.internal.gx
-com.google.android.gms.internal.ha
-com.google.android.gms.internal.ha$a
-com.google.android.gms.internal.ha$b
-com.google.android.gms.internal.ha$b$a
-com.google.android.gms.internal.ha$b$b
-com.google.android.gms.internal.ha$c
-com.google.android.gms.internal.ha$d
-com.google.android.gms.internal.ha$f
-com.google.android.gms.internal.ha$g
-com.google.android.gms.internal.ha$h
+com.google.android.gms.internal.hb
+com.google.android.gms.internal.hd
+com.google.android.gms.internal.hd$a
+com.google.android.gms.internal.hf
+com.google.android.gms.internal.hi
+com.google.android.gms.internal.hu
+com.google.android.gms.internal.ib
+com.google.android.gms.internal.id
+com.google.android.gms.internal.ig
+com.google.android.gms.internal.ig$a
+com.google.android.gms.internal.ig$b
+com.google.android.gms.internal.ig$b$a
+com.google.android.gms.internal.ig$b$b
+com.google.android.gms.internal.ig$c
+com.google.android.gms.internal.ig$d
+com.google.android.gms.internal.ig$f
+com.google.android.gms.internal.ig$g
+com.google.android.gms.internal.ig$h
 com.google.android.gms.internal.v
 com.google.android.gms.internal.x
 com.google.android.gms.location.ActivityRecognitionResult
 com.google.android.gms.location.DetectedActivity
 com.google.android.gms.location.LocationRequest
+com.google.android.gms.location.a
+com.google.android.gms.location.d
+com.google.android.gms.location.f
 com.google.android.gms.maps.GoogleMapOptions
 com.google.android.gms.maps.MapView: com.google.android.gms.maps.GoogleMap getMap()
 com.google.android.gms.maps.model.CameraPosition

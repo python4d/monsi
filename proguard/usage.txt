@@ -1212,24 +1212,95 @@ com.google.android.gms.appstate.AppStateClient$3
 com.google.android.gms.appstate.AppStateClient$4
 com.google.android.gms.appstate.AppStateClient$Builder
 com.google.android.gms.appstate.AppStateClient$a
+com.google.android.gms.appstate.AppStateManager
+com.google.android.gms.appstate.AppStateManager$1
+com.google.android.gms.appstate.AppStateManager$2
+com.google.android.gms.appstate.AppStateManager$3
+com.google.android.gms.appstate.AppStateManager$4
+com.google.android.gms.appstate.AppStateManager$5
+com.google.android.gms.appstate.AppStateManager$5$1
+com.google.android.gms.appstate.AppStateManager$6
+com.google.android.gms.appstate.AppStateManager$7
+com.google.android.gms.appstate.AppStateManager$8
+com.google.android.gms.appstate.AppStateManager$9
+com.google.android.gms.appstate.AppStateManager$StateConflictResult
+com.google.android.gms.appstate.AppStateManager$StateDeletedResult
+com.google.android.gms.appstate.AppStateManager$StateListResult
+com.google.android.gms.appstate.AppStateManager$StateLoadedResult
+com.google.android.gms.appstate.AppStateManager$StateResult
+com.google.android.gms.appstate.AppStateManager$a
+com.google.android.gms.appstate.AppStateManager$b
+com.google.android.gms.appstate.AppStateManager$c
+com.google.android.gms.appstate.AppStateManager$c$1
+com.google.android.gms.appstate.AppStateManager$d
+com.google.android.gms.appstate.AppStateManager$e
+com.google.android.gms.appstate.AppStateStatusCodes
 com.google.android.gms.appstate.OnSignOutCompleteListener
 com.google.android.gms.appstate.OnStateDeletedListener
 com.google.android.gms.appstate.OnStateListLoadedListener
 com.google.android.gms.appstate.OnStateLoadedListener
 com.google.android.gms.appstate.a
 com.google.android.gms.appstate.b
-com.google.android.gms.appstate.b$1
-com.google.android.gms.appstate.b$a
-com.google.android.gms.appstate.b$b
-com.google.android.gms.appstate.b$c
-com.google.android.gms.appstate.b$d
-com.google.android.gms.appstate.b$e
-com.google.android.gms.appstate.c
 com.google.android.gms.auth.GoogleAuthException
 com.google.android.gms.auth.GoogleAuthUtil
 com.google.android.gms.auth.GooglePlayServicesAvailabilityException
 com.google.android.gms.auth.UserRecoverableAuthException
 com.google.android.gms.auth.UserRecoverableNotifiedException
+com.google.android.gms.cast.ApplicationMetadata:
+    public boolean isNamespaceSupported(java.lang.String)
+    public boolean areNamespacesSupported(java.util.List)
+com.google.android.gms.cast.Cast
+com.google.android.gms.cast.Cast$1
+com.google.android.gms.cast.Cast$ApplicationConnectionResult
+com.google.android.gms.cast.Cast$CastApi
+com.google.android.gms.cast.Cast$CastApi$a
+com.google.android.gms.cast.Cast$CastApi$a$1
+com.google.android.gms.cast.Cast$CastApi$a$2
+com.google.android.gms.cast.Cast$CastApi$a$3
+com.google.android.gms.cast.Cast$CastApi$a$4
+com.google.android.gms.cast.Cast$CastApi$a$5
+com.google.android.gms.cast.Cast$CastApi$a$6
+com.google.android.gms.cast.Cast$CastApi$a$7
+com.google.android.gms.cast.Cast$CastApi$a$8
+com.google.android.gms.cast.Cast$CastApi$a$9
+com.google.android.gms.cast.Cast$CastOptions
+com.google.android.gms.cast.Cast$CastOptions$Builder
+com.google.android.gms.cast.Cast$Listener
+com.google.android.gms.cast.Cast$MessageReceivedCallback
+com.google.android.gms.cast.Cast$a
+com.google.android.gms.cast.Cast$b
+com.google.android.gms.cast.Cast$c
+com.google.android.gms.cast.Cast$c$1
+com.google.android.gms.cast.CastDevice:
+    public java.net.Inet4Address getIpAddress()
+    public com.google.android.gms.common.images.WebImage getIcon(int,int)
+    public boolean hasIcons()
+    public boolean isSameDevice(com.google.android.gms.cast.CastDevice)
+    public void putInBundle(android.os.Bundle)
+    public static com.google.android.gms.cast.CastDevice getFromBundle(android.os.Bundle)
+com.google.android.gms.cast.CastMediaControlIntent
+com.google.android.gms.cast.CastStatusCodes
+com.google.android.gms.cast.MediaInfo
+com.google.android.gms.cast.MediaInfo$Builder
+com.google.android.gms.cast.MediaMetadata
+com.google.android.gms.cast.MediaMetadata$a
+com.google.android.gms.cast.MediaStatus
+com.google.android.gms.cast.RemoteMediaPlayer
+com.google.android.gms.cast.RemoteMediaPlayer$1
+com.google.android.gms.cast.RemoteMediaPlayer$2
+com.google.android.gms.cast.RemoteMediaPlayer$3
+com.google.android.gms.cast.RemoteMediaPlayer$4
+com.google.android.gms.cast.RemoteMediaPlayer$5
+com.google.android.gms.cast.RemoteMediaPlayer$6
+com.google.android.gms.cast.RemoteMediaPlayer$MediaChannelResult
+com.google.android.gms.cast.RemoteMediaPlayer$OnMetadataUpdatedListener
+com.google.android.gms.cast.RemoteMediaPlayer$OnStatusUpdatedListener
+com.google.android.gms.cast.RemoteMediaPlayer$a
+com.google.android.gms.cast.RemoteMediaPlayer$a$a
+com.google.android.gms.cast.RemoteMediaPlayer$b
+com.google.android.gms.cast.RemoteMediaPlayer$b$1
+com.google.android.gms.cast.RemoteMediaPlayer$b$2
+com.google.android.gms.cast.RemoteMediaPlayer$c
 com.google.android.gms.common.AccountPicker
 com.google.android.gms.common.ConnectionResult:
     public static final int SUCCESS
@@ -1245,6 +1316,7 @@ com.google.android.gms.common.ConnectionResult:
     public static final int DEVELOPER_ERROR
     public static final int LICENSE_CHECK_FAILED
     public static final int DATE_INVALID
+    public static final int DRIVE_EXTERNAL_STORAGE_REQUIRED
     public void startResolutionForResult(android.app.Activity,int)
     public boolean hasResolution()
     public boolean isSuccess()
@@ -1273,7 +1345,6 @@ com.google.android.gms.common.GooglePlayServicesUtil:
     public static android.app.Dialog getErrorDialog(int,android.app.Activity,int,android.content.DialogInterface$OnCancelListener)
     public static java.lang.String getOpenSourceSoftwareLicenseInfo(android.content.Context)
     public static android.content.res.Resources getRemoteResource(android.content.Context)
-com.google.android.gms.common.OnStatusReceivedCallback
 com.google.android.gms.common.Scopes
 com.google.android.gms.common.SignInButton
 com.google.android.gms.common.UserRecoverableException:
@@ -1282,21 +1353,7 @@ com.google.android.gms.common.annotation.KeepName
 com.google.android.gms.common.api.Api
 com.google.android.gms.common.api.Api$a
 com.google.android.gms.common.api.Api$b
-com.google.android.gms.common.api.GoogleApiClient
-com.google.android.gms.common.api.GoogleApiClient$1
-com.google.android.gms.common.api.GoogleApiClient$2
-com.google.android.gms.common.api.GoogleApiClient$3
-com.google.android.gms.common.api.GoogleApiClient$ApiOptions
-com.google.android.gms.common.api.GoogleApiClient$Builder
-com.google.android.gms.common.api.GoogleApiClient$ConnectionCallbacks
-com.google.android.gms.common.api.GoogleApiClient$OnConnectionFailedListener
-com.google.android.gms.common.api.GoogleApiClient$a
-com.google.android.gms.common.api.PendingResult
-com.google.android.gms.common.api.PendingResult$a
-com.google.android.gms.common.api.Releasable
-com.google.android.gms.common.api.Result
-com.google.android.gms.common.api.Scope
-com.google.android.gms.common.api.Status:
+com.google.android.gms.common.api.CommonStatusCodes:
     public static final int SUCCESS_CACHE
     public static final int SUCCESS
     public static final int SERVICE_MISSING
@@ -1314,16 +1371,77 @@ com.google.android.gms.common.api.Status:
     public static final int ERROR
     public static final int INTERRUPTED
     public static final int TIMEOUT
-    public static final int GEOFENCE_NOT_AVAILABLE
-    public static final int GEOFENCE_TOO_MANY_GEOFENCES
-    public static final int GEOFENCE_TOO_MANY_PENDING_INTENTS
+    public CommonStatusCodes()
+com.google.android.gms.common.api.GoogleApiClient:
+    private final java.lang.Object mV
+    private final com.google.android.gms.internal.dx ne
+    final java.util.Queue nf
+    private com.google.android.gms.common.ConnectionResult ng
+    private int nh
+    private int ni
+    private int nj
+    private final android.os.Bundle nk
+    private final java.util.Map nl
+    private boolean nm
+    final java.util.Set nn
+    private final com.google.android.gms.common.api.GoogleApiClient$a nc
+    final com.google.android.gms.common.api.GoogleApiClient$ConnectionCallbacks no
+    private final com.google.android.gms.internal.dx$b np
+    private GoogleApiClient(android.content.Context,com.google.android.gms.internal.dt,java.util.Map,java.util.Set,java.util.Set)
+    private void bn()
+    public com.google.android.gms.common.api.a$a a(com.google.android.gms.common.api.a$a)
+    public com.google.android.gms.common.api.a$a b(com.google.android.gms.common.api.a$a)
+    private void a(com.google.android.gms.common.api.GoogleApiClient$b)
+    private void bo()
+    public com.google.android.gms.common.api.Api$a a(com.google.android.gms.common.api.Api$b)
+    public void connect()
+    public void disconnect()
+    private void A(int)
+    public void reconnect()
+    public boolean isConnected()
+    public boolean isConnecting()
+    public void registerConnectionCallbacks(com.google.android.gms.common.api.GoogleApiClient$ConnectionCallbacks)
+    public boolean isConnectionCallbacksRegistered(com.google.android.gms.common.api.GoogleApiClient$ConnectionCallbacks)
+    public void unregisterConnectionCallbacks(com.google.android.gms.common.api.GoogleApiClient$ConnectionCallbacks)
+    public void registerConnectionFailedListener(com.google.android.gms.common.api.GoogleApiClient$OnConnectionFailedListener)
+    public boolean isConnectionFailedListenerRegistered(com.google.android.gms.common.api.GoogleApiClient$OnConnectionFailedListener)
+    public void unregisterConnectionFailedListener(com.google.android.gms.common.api.GoogleApiClient$OnConnectionFailedListener)
+    static synthetic java.lang.Object c(com.google.android.gms.common.api.GoogleApiClient)
+    static synthetic int d(com.google.android.gms.common.api.GoogleApiClient)
+    static synthetic android.os.Bundle e(com.google.android.gms.common.api.GoogleApiClient)
+    static synthetic void f(com.google.android.gms.common.api.GoogleApiClient)
+    static synthetic void a(com.google.android.gms.common.api.GoogleApiClient,int)
+    static synthetic boolean g(com.google.android.gms.common.api.GoogleApiClient)
+    static synthetic com.google.android.gms.common.ConnectionResult h(com.google.android.gms.common.api.GoogleApiClient)
+    static synthetic int i(com.google.android.gms.common.api.GoogleApiClient)
+    static synthetic com.google.android.gms.common.ConnectionResult a(com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.common.ConnectionResult)
+    static synthetic int b(com.google.android.gms.common.api.GoogleApiClient,int)
+    synthetic GoogleApiClient(android.content.Context,com.google.android.gms.internal.dt,java.util.Map,java.util.Set,java.util.Set,com.google.android.gms.common.api.GoogleApiClient$1)
+com.google.android.gms.common.api.GoogleApiClient$1
+com.google.android.gms.common.api.GoogleApiClient$2
+com.google.android.gms.common.api.GoogleApiClient$3
+com.google.android.gms.common.api.GoogleApiClient$4
+com.google.android.gms.common.api.GoogleApiClient$ApiOptions
+com.google.android.gms.common.api.GoogleApiClient$Builder
+com.google.android.gms.common.api.GoogleApiClient$ConnectionCallbacks:
+    public static final int CAUSE_SERVICE_DISCONNECTED
+    public static final int CAUSE_NETWORK_LOST
+com.google.android.gms.common.api.GoogleApiClient$a
+com.google.android.gms.common.api.GoogleApiClient$b
+com.google.android.gms.common.api.PendingResult
+com.google.android.gms.common.api.PendingResult$a
+com.google.android.gms.common.api.Releasable
+com.google.android.gms.common.api.Result
+com.google.android.gms.common.api.ResultCallback
+com.google.android.gms.common.api.Scope
+com.google.android.gms.common.api.Status:
     public Status(int)
     public void startResolutionForResult(android.app.Activity,int)
     public boolean hasResolution()
     public boolean isSuccess()
     public boolean isInterrupted()
     public android.app.PendingIntent getResolution()
-    public com.google.android.gms.common.ConnectionResult bh()
+    public com.google.android.gms.common.ConnectionResult bu()
     public com.google.android.gms.common.api.Status getStatus()
 com.google.android.gms.common.api.StatusCreator:
     public static final int CONTENT_DESCRIPTION
@@ -1339,14 +1457,16 @@ com.google.android.gms.common.data.DataHolder:
     public void c(java.lang.Object)
     public DataHolder(android.database.AbstractWindowedCursor,int,android.os.Bundle)
     private DataHolder(com.google.android.gms.common.data.DataHolder$Builder,int,android.os.Bundle)
+    private DataHolder(com.google.android.gms.common.data.DataHolder$Builder,int,android.os.Bundle,int)
     private static android.database.CursorWindow[] a(android.database.AbstractWindowedCursor)
-    private static android.database.CursorWindow[] a(com.google.android.gms.common.data.DataHolder$Builder)
+    private static android.database.CursorWindow[] a(com.google.android.gms.common.data.DataHolder$Builder,int)
     public void copyToBuffer(java.lang.String,int,int,android.database.CharArrayBuffer)
     public static com.google.android.gms.common.data.DataHolder$Builder builder(java.lang.String[])
     public static com.google.android.gms.common.data.DataHolder$Builder builder(java.lang.String[],java.lang.String)
     public static com.google.android.gms.common.data.DataHolder empty(int)
     public static com.google.android.gms.common.data.DataHolder empty(int,android.os.Bundle)
     synthetic DataHolder(com.google.android.gms.common.data.DataHolder$Builder,int,android.os.Bundle,com.google.android.gms.common.data.DataHolder$1)
+    synthetic DataHolder(com.google.android.gms.common.data.DataHolder$Builder,int,android.os.Bundle,int,com.google.android.gms.common.data.DataHolder$1)
 com.google.android.gms.common.data.DataHolder$1:
     public com.google.android.gms.common.data.DataHolder$Builder withRow(java.util.HashMap)
     public com.google.android.gms.common.data.DataHolder$Builder withRow(android.content.ContentValues)
@@ -1356,12 +1476,13 @@ com.google.android.gms.common.data.DataHolder$Builder:
     public com.google.android.gms.common.data.DataHolder$Builder withRow(android.content.ContentValues)
     public com.google.android.gms.common.data.DataHolder$Builder removeRowsWithValue(java.lang.String,java.lang.Object)
     public com.google.android.gms.common.data.DataHolder$Builder sort(java.lang.String)
-    private void bk()
+    private void bx()
     public int getCount()
     public com.google.android.gms.common.data.DataHolder build(int)
     public com.google.android.gms.common.data.DataHolder build(int,android.os.Bundle)
-    static synthetic java.lang.String[] b(com.google.android.gms.common.data.DataHolder$Builder)
-    static synthetic java.util.ArrayList c(com.google.android.gms.common.data.DataHolder$Builder)
+    public com.google.android.gms.common.data.DataHolder build(int,android.os.Bundle,int)
+    static synthetic java.lang.String[] a(com.google.android.gms.common.data.DataHolder$Builder)
+    static synthetic java.util.ArrayList b(com.google.android.gms.common.data.DataHolder$Builder)
 com.google.android.gms.common.data.DataHolder$a
 com.google.android.gms.common.data.DataHolderCreator:
     public static final int CONTENT_DESCRIPTION
@@ -1375,12 +1496,12 @@ com.google.android.gms.common.data.b:
 com.google.android.gms.common.data.c
 com.google.android.gms.common.data.d
 com.google.android.gms.common.images.ImageManager:
-    private static com.google.android.gms.common.images.ImageManager lA
-    private static com.google.android.gms.common.images.ImageManager lB
+    private static com.google.android.gms.common.images.ImageManager od
+    private static com.google.android.gms.common.images.ImageManager oe
     public static com.google.android.gms.common.images.ImageManager create(android.content.Context)
     public static com.google.android.gms.common.images.ImageManager a(android.content.Context,boolean)
     private ImageManager(android.content.Context,boolean)
-    private void bm()
+    private void bz()
     public void loadImage(android.widget.ImageView,android.net.Uri)
     public void loadImage(android.widget.ImageView,int)
     public void loadImage(android.widget.ImageView,android.net.Uri,int)
@@ -1395,18 +1516,24 @@ com.google.android.gms.common.images.ImageManager$ImageReceiver:
     ImageManager$ImageReceiver(com.google.android.gms.common.images.ImageManager,android.net.Uri)
     public void c(com.google.android.gms.common.images.a)
     public void d(com.google.android.gms.common.images.a)
-    public void bp()
+    public void bB()
 com.google.android.gms.common.images.ImageManager$a
 com.google.android.gms.common.images.ImageManager$b:
     public ImageManager$b(android.content.Context)
     private static int q(android.content.Context)
 com.google.android.gms.common.images.ImageManager$d
 com.google.android.gms.common.images.ImageManager$e
+com.google.android.gms.common.images.WebImage:
+    public WebImage(android.net.Uri,int,int)
+    public WebImage(android.net.Uri)
+    public WebImage(org.json.JSONObject)
+    private static android.net.Uri f(org.json.JSONObject)
+    public org.json.JSONObject aP()
 com.google.android.gms.common.images.a:
-    private int lN
+    private int oq
     public a(android.net.Uri)
     public a(int)
-    public void w(int)
+    public void F(int)
     public void a(com.google.android.gms.common.images.ImageManager$OnImageLoadedListener)
     public void a(android.widget.ImageView)
     void r(android.content.Context)
@@ -1418,38 +1545,31 @@ com.google.android.gms.drive.Contents:
     public java.io.InputStream getInputStream()
     public java.io.OutputStream getOutputStream()
     public int getMode()
-    public int cq()
+    public int cJ()
     public void close()
 com.google.android.gms.drive.CreateFileActivityBuilder
 com.google.android.gms.drive.Drive
 com.google.android.gms.drive.Drive$1
 com.google.android.gms.drive.DriveApi
 com.google.android.gms.drive.DriveApi$ContentsResult
+com.google.android.gms.drive.DriveApi$DriveIdResult
 com.google.android.gms.drive.DriveApi$IntentSenderResult
 com.google.android.gms.drive.DriveApi$MetadataBufferResult
-com.google.android.gms.drive.DriveApi$OnContentsDiscardedCallback
-com.google.android.gms.drive.DriveApi$OnNewContentsCallback
 com.google.android.gms.drive.DriveApi$OnSyncFinishCallback
 com.google.android.gms.drive.DriveFile
 com.google.android.gms.drive.DriveFile$DownloadProgressListener
-com.google.android.gms.drive.DriveFile$OnContentsClosedCallback
-com.google.android.gms.drive.DriveFile$OnContentsOpenedCallback
 com.google.android.gms.drive.DriveFolder
 com.google.android.gms.drive.DriveFolder$DriveFileResult
 com.google.android.gms.drive.DriveFolder$DriveFolderResult
-com.google.android.gms.drive.DriveFolder$OnChildrenRetrievedCallback
-com.google.android.gms.drive.DriveFolder$OnCreateFileCallback
-com.google.android.gms.drive.DriveFolder$OnCreateFolderCallback
 com.google.android.gms.drive.DriveId:
-    public static com.google.android.gms.drive.DriveId createFromResourceId(java.lang.String)
+    public static com.google.android.gms.drive.DriveId ab(java.lang.String)
     public java.lang.String getResourceId()
     public DriveId(java.lang.String,long,long)
     public static com.google.android.gms.drive.DriveId decodeFromString(java.lang.String)
     static com.google.android.gms.drive.DriveId d(byte[])
 com.google.android.gms.drive.DriveResource
 com.google.android.gms.drive.DriveResource$MetadataResult
-com.google.android.gms.drive.DriveResource$OnMetadataRetrievedCallback
-com.google.android.gms.drive.DriveResource$OnMetadataUpdatedCallback
+com.google.android.gms.drive.DriveStatusCodes
 com.google.android.gms.drive.Metadata
 com.google.android.gms.drive.MetadataBuffer
 com.google.android.gms.drive.MetadataBuffer$a
@@ -1469,16 +1589,16 @@ com.google.android.gms.drive.internal.CreateFolderRequest:
 com.google.android.gms.drive.internal.GetMetadataRequest:
     public GetMetadataRequest(com.google.android.gms.drive.DriveId)
 com.google.android.gms.drive.internal.OnContentsResponse:
-    public com.google.android.gms.drive.Contents cx()
+    public com.google.android.gms.drive.Contents cQ()
 com.google.android.gms.drive.internal.OnDownloadProgressResponse:
-    public long cy()
-    public long cz()
+    public long cR()
+    public long cS()
 com.google.android.gms.drive.internal.OnDriveIdResponse:
     public com.google.android.gms.drive.DriveId getDriveId()
 com.google.android.gms.drive.internal.OnListEntriesResponse:
-    public com.google.android.gms.common.data.DataHolder cA()
+    public com.google.android.gms.common.data.DataHolder cT()
 com.google.android.gms.drive.internal.OnMetadataResponse:
-    public com.google.android.gms.drive.metadata.internal.MetadataBundle cB()
+    public com.google.android.gms.drive.metadata.internal.MetadataBundle cU()
 com.google.android.gms.drive.internal.OpenContentsRequest:
     public OpenContentsRequest(com.google.android.gms.drive.DriveId,int)
 com.google.android.gms.drive.internal.OpenFileIntentSenderRequest:
@@ -1494,6 +1614,7 @@ com.google.android.gms.drive.internal.h$1
 com.google.android.gms.drive.internal.h$2
 com.google.android.gms.drive.internal.h$3
 com.google.android.gms.drive.internal.h$4
+com.google.android.gms.drive.internal.h$5
 com.google.android.gms.drive.internal.h$a
 com.google.android.gms.drive.internal.h$b
 com.google.android.gms.drive.internal.h$c
@@ -1502,6 +1623,9 @@ com.google.android.gms.drive.internal.h$e
 com.google.android.gms.drive.internal.h$f
 com.google.android.gms.drive.internal.h$g
 com.google.android.gms.drive.internal.h$h
+com.google.android.gms.drive.internal.h$i
+com.google.android.gms.drive.internal.h$j
+com.google.android.gms.drive.internal.h$k
 com.google.android.gms.drive.internal.i
 com.google.android.gms.drive.internal.j
 com.google.android.gms.drive.internal.k
@@ -1532,15 +1656,15 @@ com.google.android.gms.drive.internal.p
 com.google.android.gms.drive.internal.p$a
 com.google.android.gms.drive.internal.p$a$a
 com.google.android.gms.drive.internal.q:
-    public com.google.android.gms.drive.internal.q a(com.google.android.gms.internal.hq)
+    public com.google.android.gms.drive.internal.q a(com.google.android.gms.internal.iw)
     public static com.google.android.gms.drive.internal.q e(byte[])
-    public synthetic com.google.android.gms.internal.ht b(com.google.android.gms.internal.hq)
+    public synthetic com.google.android.gms.internal.iz b(com.google.android.gms.internal.iw)
 com.google.android.gms.drive.internal.z
 com.google.android.gms.drive.metadata.CollectionMetadataField:
     protected java.util.Collection a(com.google.android.gms.common.data.DataHolder,int,int)
     protected synthetic java.lang.Object b(com.google.android.gms.common.data.DataHolder,int,int)
 com.google.android.gms.drive.metadata.MetadataField:
-    public final java.util.Collection cC()
+    public final java.util.Collection cV()
     public final java.lang.Object d(android.os.Bundle)
     public final void a(java.lang.Object,android.os.Bundle)
     public final void a(com.google.android.gms.common.data.DataHolder,com.google.android.gms.drive.metadata.internal.MetadataBundle,int,int)
@@ -1559,7 +1683,7 @@ com.google.android.gms.drive.metadata.StringMetadataField:
     protected synthetic java.lang.Object e(android.os.Bundle)
 com.google.android.gms.drive.metadata.internal.MetadataBundle:
     private MetadataBundle(android.os.Bundle)
-    public static com.google.android.gms.drive.metadata.internal.MetadataBundle cE()
+    public static com.google.android.gms.drive.metadata.internal.MetadataBundle cX()
     public static com.google.android.gms.drive.metadata.internal.MetadataBundle a(com.google.android.gms.drive.metadata.internal.MetadataBundle)
     public static com.google.android.gms.drive.metadata.internal.MetadataBundle a(com.google.android.gms.drive.metadata.MetadataField,java.lang.Object)
     public void b(com.google.android.gms.drive.metadata.MetadataField,java.lang.Object)
@@ -1579,7 +1703,7 @@ com.google.android.gms.drive.metadata.internal.b:
     protected bridge synthetic void a(android.os.Bundle,java.lang.Object)
     protected synthetic java.lang.Object e(android.os.Bundle)
 com.google.android.gms.drive.metadata.internal.c:
-    public static java.util.Collection cD()
+    public static java.util.Collection cW()
 com.google.android.gms.drive.metadata.internal.e:
     protected java.util.Collection i(android.os.Bundle)
     protected void a(android.os.Bundle,java.util.Collection)
@@ -1606,7 +1730,7 @@ com.google.android.gms.drive.query.internal.FilterHolder:
 com.google.android.gms.drive.query.internal.InFilter:
     public InFilter(com.google.android.gms.drive.metadata.CollectionMetadataField,java.lang.Object)
 com.google.android.gms.drive.query.internal.LogicalFilter:
-    private java.util.List pe
+    private java.util.List rQ
     public LogicalFilter(com.google.android.gms.drive.query.internal.Operator,java.util.List)
     public varargs LogicalFilter(com.google.android.gms.drive.query.internal.Operator,com.google.android.gms.drive.query.Filter,com.google.android.gms.drive.query.Filter[])
 com.google.android.gms.drive.query.internal.NotFilter:
@@ -1634,6 +1758,13 @@ com.google.android.gms.games.GameEntity:
     public void getDescription(android.database.CharArrayBuffer)
     public void getDeveloperName(android.database.CharArrayBuffer)
     public boolean isDataValid()
+com.google.android.gms.games.Games
+com.google.android.gms.games.Games$1
+com.google.android.gms.games.Games$2
+com.google.android.gms.games.Games$GamesOptions
+com.google.android.gms.games.Games$GamesOptions$Builder
+com.google.android.gms.games.Games$a
+com.google.android.gms.games.Games$b
 com.google.android.gms.games.GamesActivityResultCodes
 com.google.android.gms.games.GamesClient
 com.google.android.gms.games.GamesClient$1
@@ -1674,6 +1805,10 @@ com.google.android.gms.games.GamesClient$7
 com.google.android.gms.games.GamesClient$8
 com.google.android.gms.games.GamesClient$9
 com.google.android.gms.games.GamesClient$Builder
+com.google.android.gms.games.GamesMetadata
+com.google.android.gms.games.GamesMetadata$LoadGamesResult
+com.google.android.gms.games.GamesStatusCodes
+com.google.android.gms.games.Notifications
 com.google.android.gms.games.OnGamesLoadedListener
 com.google.android.gms.games.OnPlayersLoadedListener
 com.google.android.gms.games.OnSignOutCompleteListener
@@ -1688,36 +1823,41 @@ com.google.android.gms.games.PlayerEntity:
     public boolean hasIconImage()
     public boolean hasHiResImage()
     public boolean isDataValid()
+com.google.android.gms.games.Players
+com.google.android.gms.games.Players$LoadPlayersResult
 com.google.android.gms.games.achievement.Achievement
 com.google.android.gms.games.achievement.AchievementBuffer
+com.google.android.gms.games.achievement.Achievements
+com.google.android.gms.games.achievement.Achievements$LoadAchievementsResult
+com.google.android.gms.games.achievement.Achievements$UpdateAchievementResult
 com.google.android.gms.games.achievement.OnAchievementUpdatedListener
 com.google.android.gms.games.achievement.OnAchievementsLoadedListener
 com.google.android.gms.games.achievement.a
-com.google.android.gms.games.achievement.b
-com.google.android.gms.games.achievement.b$a
-com.google.android.gms.games.achievement.b$b
 com.google.android.gms.games.b:
     public b(com.google.android.gms.common.data.DataHolder,int)
     public void getDisplayName(android.database.CharArrayBuffer)
     public void getDescription(android.database.CharArrayBuffer)
     public void getDeveloperName(android.database.CharArrayBuffer)
-com.google.android.gms.games.c
-com.google.android.gms.games.c$a
-com.google.android.gms.games.e:
+com.google.android.gms.games.d:
     public void getDisplayName(android.database.CharArrayBuffer)
     public boolean hasIconImage()
     public boolean hasHiResImage()
-com.google.android.gms.games.f
-com.google.android.gms.games.f$a
 com.google.android.gms.games.leaderboard.Leaderboard
 com.google.android.gms.games.leaderboard.LeaderboardBuffer
 com.google.android.gms.games.leaderboard.LeaderboardScore
 com.google.android.gms.games.leaderboard.LeaderboardScoreBuffer
 com.google.android.gms.games.leaderboard.LeaderboardVariant
+com.google.android.gms.games.leaderboard.Leaderboards
+com.google.android.gms.games.leaderboard.Leaderboards$LeaderboardMetadataResult
+com.google.android.gms.games.leaderboard.Leaderboards$LoadPlayerScoreResult
+com.google.android.gms.games.leaderboard.Leaderboards$LoadScoresResult
+com.google.android.gms.games.leaderboard.Leaderboards$SubmitScoreResult
 com.google.android.gms.games.leaderboard.OnLeaderboardMetadataLoadedListener
 com.google.android.gms.games.leaderboard.OnLeaderboardScoresLoadedListener
 com.google.android.gms.games.leaderboard.OnPlayerLeaderboardScoreLoadedListener
 com.google.android.gms.games.leaderboard.OnScoreSubmittedListener
+com.google.android.gms.games.leaderboard.ScoreSubmissionData
+com.google.android.gms.games.leaderboard.ScoreSubmissionData$Result
 com.google.android.gms.games.leaderboard.SubmitScoreResult
 com.google.android.gms.games.leaderboard.SubmitScoreResult$Result
 com.google.android.gms.games.leaderboard.a
@@ -1727,19 +1867,15 @@ com.google.android.gms.games.leaderboard.d
 com.google.android.gms.games.leaderboard.e
 com.google.android.gms.games.leaderboard.f
 com.google.android.gms.games.leaderboard.g
-com.google.android.gms.games.leaderboard.h
-com.google.android.gms.games.leaderboard.h$a
-com.google.android.gms.games.leaderboard.h$b
-com.google.android.gms.games.leaderboard.h$c
-com.google.android.gms.games.leaderboard.h$d
-com.google.android.gms.games.leaderboard.i
-com.google.android.gms.games.leaderboard.i$a
 com.google.android.gms.games.multiplayer.Invitation:
     public static final int INVITATION_TYPE_REAL_TIME
     public static final int INVITATION_TYPE_TURN_BASED
 com.google.android.gms.games.multiplayer.InvitationBuffer
 com.google.android.gms.games.multiplayer.InvitationEntity:
     public boolean isDataValid()
+com.google.android.gms.games.multiplayer.Invitations
+com.google.android.gms.games.multiplayer.Invitations$LoadInvitationsResult
+com.google.android.gms.games.multiplayer.Multiplayer
 com.google.android.gms.games.multiplayer.OnInvitationReceivedListener
 com.google.android.gms.games.multiplayer.OnInvitationsLoadedListener
 com.google.android.gms.games.multiplayer.Participant:
@@ -1769,9 +1905,7 @@ com.google.android.gms.games.multiplayer.ParticipantResultCreator:
 com.google.android.gms.games.multiplayer.ParticipantUtils
 com.google.android.gms.games.multiplayer.b:
     b(com.google.android.gms.common.data.DataHolder,int,int)
-com.google.android.gms.games.multiplayer.c
-com.google.android.gms.games.multiplayer.c$a
-com.google.android.gms.games.multiplayer.e:
+com.google.android.gms.games.multiplayer.d:
     public void getDisplayName(android.database.CharArrayBuffer)
 com.google.android.gms.games.multiplayer.realtime.RealTimeMessage:
     public static final int UNRELIABLE
@@ -1780,6 +1914,8 @@ com.google.android.gms.games.multiplayer.realtime.RealTimeMessage:
     public byte[] getMessageData()
     public boolean isReliable()
 com.google.android.gms.games.multiplayer.realtime.RealTimeMessageReceivedListener
+com.google.android.gms.games.multiplayer.realtime.RealTimeMultiplayer
+com.google.android.gms.games.multiplayer.realtime.RealTimeMultiplayer$ReliableMessageSentCallback
 com.google.android.gms.games.multiplayer.realtime.RealTimeReliableMessageSentListener
 com.google.android.gms.games.multiplayer.realtime.RealTimeSocket
 com.google.android.gms.games.multiplayer.realtime.Room:
@@ -1794,14 +1930,14 @@ com.google.android.gms.games.multiplayer.realtime.Room:
     public abstract java.lang.String getParticipantId(java.lang.String)
     public abstract com.google.android.gms.games.multiplayer.Participant getParticipant(java.lang.String)
 com.google.android.gms.games.multiplayer.realtime.RoomConfig:
-    private final com.google.android.gms.games.multiplayer.realtime.RoomUpdateListener sK
-    private final com.google.android.gms.games.multiplayer.realtime.RoomStatusUpdateListener sL
-    private final com.google.android.gms.games.multiplayer.realtime.RealTimeMessageReceivedListener sM
-    private final java.lang.String rc
-    private final int sv
-    private final java.lang.String[] sN
-    private final android.os.Bundle sO
-    private final boolean sP
+    private final com.google.android.gms.games.multiplayer.realtime.RoomUpdateListener wD
+    private final com.google.android.gms.games.multiplayer.realtime.RoomStatusUpdateListener wE
+    private final com.google.android.gms.games.multiplayer.realtime.RealTimeMessageReceivedListener wF
+    private final java.lang.String uf
+    private final int wo
+    private final java.lang.String[] wG
+    private final android.os.Bundle wH
+    private final boolean wI
     private RoomConfig(com.google.android.gms.games.multiplayer.realtime.RoomConfig$Builder)
     public com.google.android.gms.games.multiplayer.realtime.RoomUpdateListener getRoomUpdateListener()
     public java.lang.String getInvitationId()
@@ -1829,10 +1965,8 @@ com.google.android.gms.games.multiplayer.realtime.RoomEntity:
 com.google.android.gms.games.multiplayer.realtime.RoomStatusUpdateListener
 com.google.android.gms.games.multiplayer.realtime.RoomUpdateListener
 com.google.android.gms.games.multiplayer.realtime.a
-com.google.android.gms.games.multiplayer.realtime.a$a
-com.google.android.gms.games.multiplayer.realtime.b
-com.google.android.gms.games.multiplayer.realtime.d:
-    d(com.google.android.gms.common.data.DataHolder,int,int)
+com.google.android.gms.games.multiplayer.realtime.c:
+    c(com.google.android.gms.common.data.DataHolder,int,int)
     public void getDescription(android.database.CharArrayBuffer)
     public int getParticipantStatus(java.lang.String)
     public java.util.ArrayList getParticipantIds()
@@ -1864,10 +1998,10 @@ com.google.android.gms.games.multiplayer.turnbased.TurnBasedMatch:
     public abstract com.google.android.gms.games.multiplayer.Participant getParticipant(java.lang.String)
 com.google.android.gms.games.multiplayer.turnbased.TurnBasedMatchBuffer
 com.google.android.gms.games.multiplayer.turnbased.TurnBasedMatchConfig:
-    private final int sv
-    private final java.lang.String[] sN
-    private final android.os.Bundle sO
-    private final int ta
+    private final int wo
+    private final java.lang.String[] wG
+    private final android.os.Bundle wH
+    private final int wT
     private TurnBasedMatchConfig(com.google.android.gms.games.multiplayer.turnbased.TurnBasedMatchConfig$Builder)
     public int getVariant()
     public int getMinPlayers()
@@ -1890,6 +2024,13 @@ com.google.android.gms.games.multiplayer.turnbased.TurnBasedMatchEntity:
     static com.google.android.gms.games.multiplayer.Participant c(com.google.android.gms.games.multiplayer.turnbased.TurnBasedMatch,java.lang.String)
 com.google.android.gms.games.multiplayer.turnbased.TurnBasedMatchEntityCreator:
     public static final int CONTENT_DESCRIPTION
+com.google.android.gms.games.multiplayer.turnbased.TurnBasedMultiplayer
+com.google.android.gms.games.multiplayer.turnbased.TurnBasedMultiplayer$CancelMatchResult
+com.google.android.gms.games.multiplayer.turnbased.TurnBasedMultiplayer$InitiateMatchResult
+com.google.android.gms.games.multiplayer.turnbased.TurnBasedMultiplayer$LeaveMatchResult
+com.google.android.gms.games.multiplayer.turnbased.TurnBasedMultiplayer$LoadMatchResult
+com.google.android.gms.games.multiplayer.turnbased.TurnBasedMultiplayer$LoadMatchesResult
+com.google.android.gms.games.multiplayer.turnbased.TurnBasedMultiplayer$UpdateMatchResult
 com.google.android.gms.games.multiplayer.turnbased.TurnBasedMultiplayerListener
 com.google.android.gms.games.multiplayer.turnbased.a:
     a(com.google.android.gms.common.data.DataHolder,int,int)
@@ -1898,13 +2039,6 @@ com.google.android.gms.games.multiplayer.turnbased.a:
     public java.util.ArrayList getParticipantIds()
     public java.lang.String getParticipantId(java.lang.String)
     public com.google.android.gms.games.multiplayer.Participant getParticipant(java.lang.String)
-com.google.android.gms.games.multiplayer.turnbased.b
-com.google.android.gms.games.multiplayer.turnbased.b$a
-com.google.android.gms.games.multiplayer.turnbased.b$b
-com.google.android.gms.games.multiplayer.turnbased.b$c
-com.google.android.gms.games.multiplayer.turnbased.b$d
-com.google.android.gms.games.multiplayer.turnbased.b$e
-com.google.android.gms.games.multiplayer.turnbased.b$f
 com.google.android.gms.gcm.GoogleCloudMessaging
 com.google.android.gms.gcm.GoogleCloudMessaging$1
 com.google.android.gms.internal.af$a:
@@ -1955,227 +2089,355 @@ com.google.android.gms.internal.bg:
     public static int a(com.google.ads.AdRequest$ErrorCode)
     public static final com.google.ads.AdRequest$ErrorCode h(int)
 com.google.android.gms.internal.bg$1
-com.google.android.gms.internal.cz:
+com.google.android.gms.internal.da:
     public void onShowCustomView(android.view.View,int,android.webkit.WebChromeClient$CustomViewCallback)
-com.google.android.gms.internal.da
 com.google.android.gms.internal.db
-com.google.android.gms.internal.db$a
-com.google.android.gms.internal.db$b
-com.google.android.gms.internal.db$c
-com.google.android.gms.internal.db$d
-com.google.android.gms.internal.db$e
-com.google.android.gms.internal.db$f
-com.google.android.gms.internal.db$g
-com.google.android.gms.internal.db$h
 com.google.android.gms.internal.dc
 com.google.android.gms.internal.dc$a
-com.google.android.gms.internal.dc$a$a
+com.google.android.gms.internal.dc$b
+com.google.android.gms.internal.dc$c
+com.google.android.gms.internal.dc$d
+com.google.android.gms.internal.dc$e
+com.google.android.gms.internal.dc$f
+com.google.android.gms.internal.dc$g
+com.google.android.gms.internal.dc$h
 com.google.android.gms.internal.dd
 com.google.android.gms.internal.dd$a
 com.google.android.gms.internal.dd$a$a
-com.google.android.gms.internal.dg:
-    public static void a(boolean,java.lang.Object)
+com.google.android.gms.internal.de
+com.google.android.gms.internal.de$a
+com.google.android.gms.internal.de$a$a
+com.google.android.gms.internal.df
+com.google.android.gms.internal.dg
+com.google.android.gms.internal.dg$1
+com.google.android.gms.internal.dg$1$1
+com.google.android.gms.internal.dg$1$2
+com.google.android.gms.internal.dg$1$3
+com.google.android.gms.internal.dg$a
 com.google.android.gms.internal.dh:
-    private final com.google.android.gms.internal.dh$a mt
-    private final android.view.View kQ
-    public dh(java.lang.String,java.util.Collection,int,android.view.View,java.lang.String)
-    public java.lang.String bt()
-    public java.util.List bu()
-com.google.android.gms.internal.dh$a:
-    public dh$a(java.lang.String,java.util.Collection,int,java.lang.String)
-    public java.lang.String bt()
-com.google.android.gms.internal.dk:
-    public final java.lang.String[] bA()
-    public final void a(com.google.android.gms.internal.dk$b)
-    public void registerConnectionCallbacks(com.google.android.gms.common.api.GoogleApiClient$ConnectionCallbacks)
-    public void registerConnectionFailedListener(com.google.android.gms.common.api.GoogleApiClient$OnConnectionFailedListener)
-    public boolean isConnectionCallbacksRegistered(com.google.android.gms.common.GooglePlayServicesClient$ConnectionCallbacks)
-    public void unregisterConnectionCallbacks(com.google.android.gms.common.GooglePlayServicesClient$ConnectionCallbacks)
-    public boolean isConnectionFailedListenerRegistered(com.google.android.gms.common.GooglePlayServicesClient$OnConnectionFailedListener)
-    public void unregisterConnectionFailedListener(com.google.android.gms.common.GooglePlayServicesClient$OnConnectionFailedListener)
-com.google.android.gms.internal.dk$c
-com.google.android.gms.internal.dl:
-    public dl(android.content.Context,com.google.android.gms.internal.dl$b)
-    public boolean isConnectionCallbacksRegistered(com.google.android.gms.common.GooglePlayServicesClient$ConnectionCallbacks)
-    public void unregisterConnectionCallbacks(com.google.android.gms.common.GooglePlayServicesClient$ConnectionCallbacks)
-    public boolean isConnectionFailedListenerRegistered(com.google.android.gms.common.GooglePlayServicesClient$OnConnectionFailedListener)
-    public void unregisterConnectionFailedListener(com.google.android.gms.common.GooglePlayServicesClient$OnConnectionFailedListener)
+    public static double h(long)
+    public static long b(double)
+com.google.android.gms.internal.di
+com.google.android.gms.internal.di$a
+com.google.android.gms.internal.di$a$a
+com.google.android.gms.internal.dj
+com.google.android.gms.internal.dj$a
+com.google.android.gms.internal.dk
+com.google.android.gms.internal.dl
+com.google.android.gms.internal.dl$1
+com.google.android.gms.internal.dl$a
+com.google.android.gms.internal.dm
+com.google.android.gms.internal.dn
 com.google.android.gms.internal.do
-com.google.android.gms.internal.dr
-com.google.android.gms.internal.dr$a
-com.google.android.gms.internal.dr$a$a
-com.google.android.gms.internal.dv
-com.google.android.gms.internal.dw
-com.google.android.gms.internal.dx
-com.google.android.gms.internal.dy:
-    private int nn
-    public dy(int)
+com.google.android.gms.internal.dp
+com.google.android.gms.internal.ds:
+    public static void a(boolean,java.lang.Object)
+com.google.android.gms.internal.dt:
+    private final com.google.android.gms.internal.dt$a oX
+    private final android.view.View nu
+    public dt(java.lang.String,java.util.Collection,int,android.view.View,java.lang.String)
+    public java.lang.String getAccountName()
+    public java.lang.String bF()
+    public int bG()
+    public java.util.List bH()
+    public java.lang.String[] bI()
+    public java.lang.String bJ()
+    public android.view.View bK()
+com.google.android.gms.internal.dt$a:
+    public dt$a(java.lang.String,java.util.Collection,int,java.lang.String)
+    public java.lang.String bF()
+com.google.android.gms.internal.dw:
+    public void I(int)
+    public final java.lang.String[] bO()
+    public final void a(com.google.android.gms.internal.dw$b)
+    public void registerConnectionCallbacks(com.google.android.gms.common.GooglePlayServicesClient$ConnectionCallbacks)
+    public boolean isConnectionCallbacksRegistered(com.google.android.gms.common.GooglePlayServicesClient$ConnectionCallbacks)
+    public void unregisterConnectionCallbacks(com.google.android.gms.common.GooglePlayServicesClient$ConnectionCallbacks)
+    public void registerConnectionFailedListener(com.google.android.gms.common.GooglePlayServicesClient$OnConnectionFailedListener)
+    public boolean isConnectionFailedListenerRegistered(com.google.android.gms.common.GooglePlayServicesClient$OnConnectionFailedListener)
+    public void unregisterConnectionFailedListener(com.google.android.gms.common.GooglePlayServicesClient$OnConnectionFailedListener)
+com.google.android.gms.internal.dw$d
+com.google.android.gms.internal.dx:
+    public dx(android.content.Context,com.google.android.gms.internal.dx$b)
+    public boolean isConnectionCallbacksRegistered(com.google.android.gms.common.api.GoogleApiClient$ConnectionCallbacks)
+    public void unregisterConnectionCallbacks(com.google.android.gms.common.api.GoogleApiClient$ConnectionCallbacks)
+    public boolean isConnectionFailedListenerRegistered(com.google.android.gms.common.GooglePlayServicesClient$OnConnectionFailedListener)
+    public void unregisterConnectionFailedListener(com.google.android.gms.common.GooglePlayServicesClient$OnConnectionFailedListener)
+com.google.android.gms.internal.ea
+com.google.android.gms.internal.ed
+com.google.android.gms.internal.ed$a
+com.google.android.gms.internal.ed$a$a
+com.google.android.gms.internal.eh
+com.google.android.gms.internal.ei
+com.google.android.gms.internal.ej
+com.google.android.gms.internal.ek:
+    private int pT
+    public ek(int)
     public final java.lang.Object get(java.lang.Object)
     protected java.lang.Object create(java.lang.Object)
     public final synchronized int size()
-com.google.android.gms.internal.ee$a:
-    public com.google.android.gms.internal.ee$a bT()
-com.google.android.gms.internal.eh:
-    public void ce()
-    public eh(java.lang.Class)
+com.google.android.gms.internal.es$a:
+    public com.google.android.gms.internal.es$a cm()
+com.google.android.gms.internal.ev:
+    public void cx()
+    public ev(java.lang.Class)
     public void a(java.lang.Class,java.util.HashMap)
     public boolean b(java.lang.Class)
-com.google.android.gms.internal.ek:
-    private ek(com.google.android.gms.common.internal.safeparcel.SafeParcelable,com.google.android.gms.internal.eh,java.lang.String)
-    public static com.google.android.gms.internal.ek a(com.google.android.gms.internal.ee)
-    private static com.google.android.gms.internal.eh b(com.google.android.gms.internal.ee)
-    private static void a(com.google.android.gms.internal.eh,com.google.android.gms.internal.ee)
-com.google.android.gms.internal.eo
-com.google.android.gms.internal.es:
-    public static boolean cl()
-    public static boolean cn()
-    public static boolean co()
-com.google.android.gms.internal.et$1:
+com.google.android.gms.internal.ey:
+    private ey(com.google.android.gms.common.internal.safeparcel.SafeParcelable,com.google.android.gms.internal.ev,java.lang.String)
+    public static com.google.android.gms.internal.ey a(com.google.android.gms.internal.es)
+    private static com.google.android.gms.internal.ev b(com.google.android.gms.internal.es)
+    private static void a(com.google.android.gms.internal.ev,com.google.android.gms.internal.es)
+com.google.android.gms.internal.fc
+com.google.android.gms.internal.fe:
+    public static boolean d(java.lang.Object,java.lang.Object)
+com.google.android.gms.internal.fg:
+    public static boolean cE()
+    public static boolean cG()
+    public static boolean cH()
+com.google.android.gms.internal.fh$1:
     protected java.lang.Boolean e(com.google.android.gms.common.data.DataHolder,int,int)
     protected synthetic java.lang.Object b(com.google.android.gms.common.data.DataHolder,int,int)
-com.google.android.gms.internal.ev:
+com.google.android.gms.internal.fj:
     protected com.google.android.gms.drive.DriveId g(com.google.android.gms.common.data.DataHolder,int,int)
     protected synthetic java.lang.Object b(com.google.android.gms.common.data.DataHolder,int,int)
-com.google.android.gms.internal.ew
-com.google.android.gms.internal.ex
-com.google.android.gms.internal.ex$a
-com.google.android.gms.internal.ex$aa
-com.google.android.gms.internal.ex$ab
-com.google.android.gms.internal.ex$ac
-com.google.android.gms.internal.ex$ad
-com.google.android.gms.internal.ex$ae
-com.google.android.gms.internal.ex$af
-com.google.android.gms.internal.ex$ag
-com.google.android.gms.internal.ex$ah
-com.google.android.gms.internal.ex$ai
-com.google.android.gms.internal.ex$aj
-com.google.android.gms.internal.ex$ak
-com.google.android.gms.internal.ex$al
-com.google.android.gms.internal.ex$am
-com.google.android.gms.internal.ex$an
-com.google.android.gms.internal.ex$ao
-com.google.android.gms.internal.ex$ap
-com.google.android.gms.internal.ex$aq
-com.google.android.gms.internal.ex$ar
-com.google.android.gms.internal.ex$as
-com.google.android.gms.internal.ex$at
-com.google.android.gms.internal.ex$au
-com.google.android.gms.internal.ex$av
-com.google.android.gms.internal.ex$aw
-com.google.android.gms.internal.ex$ax
-com.google.android.gms.internal.ex$ay
-com.google.android.gms.internal.ex$az
-com.google.android.gms.internal.ex$b
-com.google.android.gms.internal.ex$ba
-com.google.android.gms.internal.ex$bb
-com.google.android.gms.internal.ex$bc
-com.google.android.gms.internal.ex$bd
-com.google.android.gms.internal.ex$be
-com.google.android.gms.internal.ex$bf
-com.google.android.gms.internal.ex$bg
-com.google.android.gms.internal.ex$bh
-com.google.android.gms.internal.ex$bi
-com.google.android.gms.internal.ex$bj
-com.google.android.gms.internal.ex$bk
-com.google.android.gms.internal.ex$c
-com.google.android.gms.internal.ex$d
-com.google.android.gms.internal.ex$e
-com.google.android.gms.internal.ex$f
-com.google.android.gms.internal.ex$g
-com.google.android.gms.internal.ex$h
-com.google.android.gms.internal.ex$i
-com.google.android.gms.internal.ex$j
-com.google.android.gms.internal.ex$k
-com.google.android.gms.internal.ex$l
-com.google.android.gms.internal.ex$m
-com.google.android.gms.internal.ex$n
-com.google.android.gms.internal.ex$o
-com.google.android.gms.internal.ex$p
-com.google.android.gms.internal.ex$q
-com.google.android.gms.internal.ex$r
-com.google.android.gms.internal.ex$s
-com.google.android.gms.internal.ex$t
-com.google.android.gms.internal.ex$u
-com.google.android.gms.internal.ex$v
-com.google.android.gms.internal.ex$w
-com.google.android.gms.internal.ex$x
-com.google.android.gms.internal.ex$y
-com.google.android.gms.internal.ex$z
-com.google.android.gms.internal.ez
-com.google.android.gms.internal.fa
-com.google.android.gms.internal.fb
-com.google.android.gms.internal.fb$a
-com.google.android.gms.internal.fb$a$a
-com.google.android.gms.internal.fc
-com.google.android.gms.internal.fc$a
-com.google.android.gms.internal.fc$a$a
-com.google.android.gms.internal.fd
-com.google.android.gms.internal.fd$1
-com.google.android.gms.internal.fd$a
-com.google.android.gms.internal.fd$b
-com.google.android.gms.internal.fe
-com.google.android.gms.internal.ff
-com.google.android.gms.internal.fh
-com.google.android.gms.internal.fi
-com.google.android.gms.internal.fj
-com.google.android.gms.internal.fj$a
-com.google.android.gms.internal.fj$a$a
 com.google.android.gms.internal.fk
-com.google.android.gms.internal.fk$a
-com.google.android.gms.internal.fk$a$a
 com.google.android.gms.internal.fl
 com.google.android.gms.internal.fl$a
+com.google.android.gms.internal.fl$aa
+com.google.android.gms.internal.fl$ab
+com.google.android.gms.internal.fl$ac
+com.google.android.gms.internal.fl$ad
+com.google.android.gms.internal.fl$ae
+com.google.android.gms.internal.fl$af
+com.google.android.gms.internal.fl$ag
+com.google.android.gms.internal.fl$ah
+com.google.android.gms.internal.fl$ai
+com.google.android.gms.internal.fl$aj
+com.google.android.gms.internal.fl$ak
+com.google.android.gms.internal.fl$al
+com.google.android.gms.internal.fl$am
+com.google.android.gms.internal.fl$an
+com.google.android.gms.internal.fl$ao
+com.google.android.gms.internal.fl$ap
+com.google.android.gms.internal.fl$aq
+com.google.android.gms.internal.fl$ar
+com.google.android.gms.internal.fl$as
+com.google.android.gms.internal.fl$at
+com.google.android.gms.internal.fl$au
+com.google.android.gms.internal.fl$av
+com.google.android.gms.internal.fl$aw
+com.google.android.gms.internal.fl$ax
+com.google.android.gms.internal.fl$ay
+com.google.android.gms.internal.fl$az
 com.google.android.gms.internal.fl$b
-com.google.android.gms.internal.fm
-com.google.android.gms.internal.fm$1
-com.google.android.gms.internal.fm$a
-com.google.android.gms.internal.fm$b
-com.google.android.gms.internal.fm$c
-com.google.android.gms.internal.fm$d
-com.google.android.gms.internal.fn:
-    public fn(java.lang.String,int,short,double,double,float,long,int,int)
-    public static com.google.android.gms.internal.fn f(byte[])
+com.google.android.gms.internal.fl$ba
+com.google.android.gms.internal.fl$bb
+com.google.android.gms.internal.fl$bc
+com.google.android.gms.internal.fl$bd
+com.google.android.gms.internal.fl$be
+com.google.android.gms.internal.fl$bf
+com.google.android.gms.internal.fl$bg
+com.google.android.gms.internal.fl$bh
+com.google.android.gms.internal.fl$bi
+com.google.android.gms.internal.fl$bj
+com.google.android.gms.internal.fl$bk
+com.google.android.gms.internal.fl$c
+com.google.android.gms.internal.fl$d
+com.google.android.gms.internal.fl$e
+com.google.android.gms.internal.fl$f
+com.google.android.gms.internal.fl$g
+com.google.android.gms.internal.fl$h
+com.google.android.gms.internal.fl$i
+com.google.android.gms.internal.fl$j
+com.google.android.gms.internal.fl$k
+com.google.android.gms.internal.fl$l
+com.google.android.gms.internal.fl$m
+com.google.android.gms.internal.fl$n
+com.google.android.gms.internal.fl$o
+com.google.android.gms.internal.fl$p
+com.google.android.gms.internal.fl$q
+com.google.android.gms.internal.fl$r
+com.google.android.gms.internal.fl$s
+com.google.android.gms.internal.fl$t
+com.google.android.gms.internal.fl$u
+com.google.android.gms.internal.fl$v
+com.google.android.gms.internal.fl$w
+com.google.android.gms.internal.fl$x
+com.google.android.gms.internal.fl$y
+com.google.android.gms.internal.fl$z
+com.google.android.gms.internal.fn
+com.google.android.gms.internal.fo
+com.google.android.gms.internal.fo$a
+com.google.android.gms.internal.fo$a$a
 com.google.android.gms.internal.fp
+com.google.android.gms.internal.fp$a
+com.google.android.gms.internal.fp$a$a
+com.google.android.gms.internal.fq
+com.google.android.gms.internal.fq$1
+com.google.android.gms.internal.fq$a
+com.google.android.gms.internal.fq$b
+com.google.android.gms.internal.fr
+com.google.android.gms.internal.fs
+com.google.android.gms.internal.fs$1
+com.google.android.gms.internal.fs$2
+com.google.android.gms.internal.fs$3
+com.google.android.gms.internal.fs$4
+com.google.android.gms.internal.fs$5
+com.google.android.gms.internal.fs$6
+com.google.android.gms.internal.fs$7
+com.google.android.gms.internal.fs$8
+com.google.android.gms.internal.fs$9
+com.google.android.gms.internal.fs$a
+com.google.android.gms.internal.fs$a$1
+com.google.android.gms.internal.fs$b
+com.google.android.gms.internal.fs$b$1
+com.google.android.gms.internal.ft
+com.google.android.gms.internal.fu
+com.google.android.gms.internal.fu$1
+com.google.android.gms.internal.fu$a
+com.google.android.gms.internal.fu$a$1
+com.google.android.gms.internal.fv
+com.google.android.gms.internal.fv$1
+com.google.android.gms.internal.fv$a
+com.google.android.gms.internal.fv$a$1
+com.google.android.gms.internal.fw
+com.google.android.gms.internal.fw$1
+com.google.android.gms.internal.fw$2
+com.google.android.gms.internal.fw$3
+com.google.android.gms.internal.fw$4
+com.google.android.gms.internal.fw$5
+com.google.android.gms.internal.fw$6
+com.google.android.gms.internal.fw$7
+com.google.android.gms.internal.fw$a
+com.google.android.gms.internal.fw$a$1
+com.google.android.gms.internal.fw$b
+com.google.android.gms.internal.fw$b$1
+com.google.android.gms.internal.fw$c
+com.google.android.gms.internal.fw$c$1
+com.google.android.gms.internal.fw$d
+com.google.android.gms.internal.fw$d$1
+com.google.android.gms.internal.fx
 com.google.android.gms.internal.fy
-com.google.android.gms.internal.fy$a
-com.google.android.gms.internal.fy$a$a
-com.google.android.gms.internal.gi
-com.google.android.gms.internal.gi$a
-com.google.android.gms.internal.gi$a$a
+com.google.android.gms.internal.fz
+com.google.android.gms.internal.fz$1
+com.google.android.gms.internal.fz$2
+com.google.android.gms.internal.fz$3
+com.google.android.gms.internal.fz$4
+com.google.android.gms.internal.fz$5
+com.google.android.gms.internal.fz$a
+com.google.android.gms.internal.fz$a$1
+com.google.android.gms.internal.ga
+com.google.android.gms.internal.gb
+com.google.android.gms.internal.gb$1
+com.google.android.gms.internal.gb$10
+com.google.android.gms.internal.gb$2
+com.google.android.gms.internal.gb$3
+com.google.android.gms.internal.gb$4
+com.google.android.gms.internal.gb$5
+com.google.android.gms.internal.gb$6
+com.google.android.gms.internal.gb$7
+com.google.android.gms.internal.gb$8
+com.google.android.gms.internal.gb$9
+com.google.android.gms.internal.gb$a
+com.google.android.gms.internal.gb$a$1
+com.google.android.gms.internal.gb$b
+com.google.android.gms.internal.gb$b$1
+com.google.android.gms.internal.gb$c
+com.google.android.gms.internal.gb$c$1
+com.google.android.gms.internal.gb$d
+com.google.android.gms.internal.gb$d$1
+com.google.android.gms.internal.gb$e
+com.google.android.gms.internal.gb$e$1
+com.google.android.gms.internal.gb$f
+com.google.android.gms.internal.gb$f$1
+com.google.android.gms.internal.gc
+com.google.android.gms.internal.ge
+com.google.android.gms.internal.gf
+com.google.android.gms.internal.gg
 com.google.android.gms.internal.gj
 com.google.android.gms.internal.gj$a
 com.google.android.gms.internal.gj$a$a
 com.google.android.gms.internal.gk
 com.google.android.gms.internal.gk$a
-com.google.android.gms.internal.gk$b
-com.google.android.gms.internal.gk$c
+com.google.android.gms.internal.gk$a$a
 com.google.android.gms.internal.gl
+com.google.android.gms.internal.gl$a
+com.google.android.gms.internal.gl$a$a
 com.google.android.gms.internal.gm
 com.google.android.gms.internal.gm$a
-com.google.android.gms.internal.gm$a$a
+com.google.android.gms.internal.gm$b
 com.google.android.gms.internal.gn
+com.google.android.gms.internal.gn$1
 com.google.android.gms.internal.gn$a
-com.google.android.gms.internal.gn$a$a
-com.google.android.gms.internal.go
-com.google.android.gms.internal.go$a
-com.google.android.gms.internal.go$a$a
-com.google.android.gms.internal.gp
-com.google.android.gms.internal.gp$a
-com.google.android.gms.internal.gp$a$a
+com.google.android.gms.internal.gn$b
+com.google.android.gms.internal.gn$c
+com.google.android.gms.internal.gn$d
+com.google.android.gms.internal.go:
+    public go(java.lang.String,int,short,double,double,float,long,int,int)
+    public static com.google.android.gms.internal.go f(byte[])
 com.google.android.gms.internal.gq
-com.google.android.gms.internal.gq$a
-com.google.android.gms.internal.gq$b
-com.google.android.gms.internal.gq$c
-com.google.android.gms.internal.gq$d
-com.google.android.gms.internal.gq$e
-com.google.android.gms.internal.gq$f
-com.google.android.gms.internal.gr
-com.google.android.gms.internal.gr$a
-com.google.android.gms.internal.gs:
-    gs(java.lang.String,java.lang.String[],java.lang.String[],java.lang.String[],java.lang.String,java.lang.String,java.lang.String)
-com.google.android.gms.internal.gt
-com.google.android.gms.internal.gv:
-    public gv(java.util.Set,com.google.android.gms.internal.gv,java.util.List,com.google.android.gms.internal.gv,java.lang.String,java.lang.String,java.lang.String,java.util.List,int,java.util.List,com.google.android.gms.internal.gv,java.util.List,java.lang.String,java.lang.String,com.google.android.gms.internal.gv,java.lang.String,java.lang.String,java.lang.String,java.util.List,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,com.google.android.gms.internal.gv,java.lang.String,java.lang.String,java.lang.String,java.lang.String,com.google.android.gms.internal.gv,double,com.google.android.gms.internal.gv,double,java.lang.String,com.google.android.gms.internal.gv,java.util.List,java.lang.String,java.lang.String,java.lang.String,java.lang.String,com.google.android.gms.internal.gv,java.lang.String,java.lang.String,java.lang.String,com.google.android.gms.internal.gv,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+com.google.android.gms.internal.gz
+com.google.android.gms.internal.gz$a
+com.google.android.gms.internal.gz$a$a
+com.google.android.gms.internal.hk
+com.google.android.gms.internal.hk$a
+com.google.android.gms.internal.hk$a$a
+com.google.android.gms.internal.hl
+com.google.android.gms.internal.hl$a
+com.google.android.gms.internal.hl$a$a
+com.google.android.gms.internal.hm
+com.google.android.gms.internal.hm$a
+com.google.android.gms.internal.hm$b
+com.google.android.gms.internal.hm$c
+com.google.android.gms.internal.hn
+com.google.android.gms.internal.ho
+com.google.android.gms.internal.ho$a
+com.google.android.gms.internal.ho$a$a
+com.google.android.gms.internal.hp
+com.google.android.gms.internal.hp$a
+com.google.android.gms.internal.hp$a$a
+com.google.android.gms.internal.hq
+com.google.android.gms.internal.hq$a
+com.google.android.gms.internal.hq$a$a
+com.google.android.gms.internal.hr
+com.google.android.gms.internal.hr$a
+com.google.android.gms.internal.hr$a$a
+com.google.android.gms.internal.hs
+com.google.android.gms.internal.hs$a
+com.google.android.gms.internal.hs$b
+com.google.android.gms.internal.hs$c
+com.google.android.gms.internal.hs$d
+com.google.android.gms.internal.hs$e
+com.google.android.gms.internal.hs$f
+com.google.android.gms.internal.ht
+com.google.android.gms.internal.ht$a
+com.google.android.gms.internal.hu:
+    public hu(java.lang.String,java.lang.String[],java.lang.String[],java.lang.String[],java.lang.String,java.lang.String,java.lang.String)
+com.google.android.gms.internal.hv
+com.google.android.gms.internal.hx
+com.google.android.gms.internal.hx$1
+com.google.android.gms.internal.hx$a
+com.google.android.gms.internal.hy
+com.google.android.gms.internal.hz
+com.google.android.gms.internal.hz$1
+com.google.android.gms.internal.hz$2
+com.google.android.gms.internal.hz$3
+com.google.android.gms.internal.hz$4
+com.google.android.gms.internal.hz$a
+com.google.android.gms.internal.hz$a$1
+com.google.android.gms.internal.hz$b
+com.google.android.gms.internal.hz$c
+com.google.android.gms.internal.ia
+com.google.android.gms.internal.ia$1
+com.google.android.gms.internal.ia$2
+com.google.android.gms.internal.ia$3
+com.google.android.gms.internal.ia$4
+com.google.android.gms.internal.ia$5
+com.google.android.gms.internal.ia$a
+com.google.android.gms.internal.ia$a$1
+com.google.android.gms.internal.ib:
+    public ib(java.util.Set,com.google.android.gms.internal.ib,java.util.List,com.google.android.gms.internal.ib,java.lang.String,java.lang.String,java.lang.String,java.util.List,int,java.util.List,com.google.android.gms.internal.ib,java.util.List,java.lang.String,java.lang.String,com.google.android.gms.internal.ib,java.lang.String,java.lang.String,java.lang.String,java.util.List,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,com.google.android.gms.internal.ib,java.lang.String,java.lang.String,java.lang.String,java.lang.String,com.google.android.gms.internal.ib,double,com.google.android.gms.internal.ib,double,java.lang.String,com.google.android.gms.internal.ib,java.util.List,java.lang.String,java.lang.String,java.lang.String,java.lang.String,com.google.android.gms.internal.ib,java.lang.String,java.lang.String,java.lang.String,com.google.android.gms.internal.ib,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
     public com.google.android.gms.plus.model.moments.ItemScope getAbout()
     public boolean hasAbout()
     public boolean hasAdditionalName()
@@ -2246,8 +2508,8 @@ com.google.android.gms.internal.gv:
     public boolean hasWidth()
     public boolean hasWorstRating()
     public boolean isDataValid()
-com.google.android.gms.internal.gx:
-    public gx(java.util.Set,java.lang.String,com.google.android.gms.internal.gv,java.lang.String,com.google.android.gms.internal.gv,java.lang.String)
+com.google.android.gms.internal.id:
+    public id(java.util.Set,java.lang.String,com.google.android.gms.internal.ib,java.lang.String,com.google.android.gms.internal.ib,java.lang.String)
     public boolean hasId()
     public com.google.android.gms.plus.model.moments.ItemScope getResult()
     public boolean hasResult()
@@ -2256,9 +2518,9 @@ com.google.android.gms.internal.gx:
     public boolean hasTarget()
     public boolean hasType()
     public boolean isDataValid()
-com.google.android.gms.internal.gz
-com.google.android.gms.internal.ha:
-    public ha(java.lang.String,java.lang.String,com.google.android.gms.internal.ha$c,int,java.lang.String)
+com.google.android.gms.internal.if
+com.google.android.gms.internal.ig:
+    public ig(java.lang.String,java.lang.String,com.google.android.gms.internal.ig$c,int,java.lang.String)
     public boolean hasAboutMe()
     public com.google.android.gms.plus.model.people.Person$AgeRange getAgeRange()
     public boolean hasAgeRange()
@@ -2290,33 +2552,33 @@ com.google.android.gms.internal.ha:
     public java.util.List getUrls()
     public boolean hasUrls()
     public boolean hasVerified()
-    public static com.google.android.gms.internal.ha g(byte[])
+    public static com.google.android.gms.internal.ig g(byte[])
     public boolean isDataValid()
-com.google.android.gms.internal.ha$a:
+com.google.android.gms.internal.ig$a:
     public boolean hasMax()
     public boolean hasMin()
     public boolean isDataValid()
-com.google.android.gms.internal.ha$b:
+com.google.android.gms.internal.ig$b:
     public com.google.android.gms.plus.model.people.Person$Cover$CoverInfo getCoverInfo()
     public boolean hasCoverInfo()
     public com.google.android.gms.plus.model.people.Person$Cover$CoverPhoto getCoverPhoto()
     public boolean hasCoverPhoto()
     public boolean hasLayout()
     public boolean isDataValid()
-com.google.android.gms.internal.ha$b$a:
+com.google.android.gms.internal.ig$b$a:
     public boolean hasLeftImageOffset()
     public boolean hasTopImageOffset()
     public boolean isDataValid()
-com.google.android.gms.internal.ha$b$b:
+com.google.android.gms.internal.ig$b$b:
     public boolean hasHeight()
     public boolean hasUrl()
     public boolean hasWidth()
     public boolean isDataValid()
-com.google.android.gms.internal.ha$c:
-    public ha$c(java.lang.String)
+com.google.android.gms.internal.ig$c:
+    public ig$c(java.lang.String)
     public boolean hasUrl()
     public boolean isDataValid()
-com.google.android.gms.internal.ha$d:
+com.google.android.gms.internal.ig$d:
     public boolean hasFamilyName()
     public boolean hasFormatted()
     public boolean hasGivenName()
@@ -2324,8 +2586,8 @@ com.google.android.gms.internal.ha$d:
     public boolean hasHonorificSuffix()
     public boolean hasMiddleName()
     public boolean isDataValid()
-com.google.android.gms.internal.ha$e
-com.google.android.gms.internal.ha$f:
+com.google.android.gms.internal.ig$e
+com.google.android.gms.internal.ig$f:
     public boolean hasDepartment()
     public boolean hasDescription()
     public boolean hasEndDate()
@@ -2336,34 +2598,34 @@ com.google.android.gms.internal.ha$f:
     public boolean hasTitle()
     public boolean hasType()
     public boolean isDataValid()
-com.google.android.gms.internal.ha$g:
+com.google.android.gms.internal.ig$g:
     public boolean hasPrimary()
     public boolean hasValue()
     public boolean isDataValid()
-com.google.android.gms.internal.ha$h:
+com.google.android.gms.internal.ig$h:
     public boolean hasLabel()
     public boolean hasType()
     public boolean hasValue()
     public boolean isDataValid()
-com.google.android.gms.internal.hl
-com.google.android.gms.internal.hm
-com.google.android.gms.internal.hm$a
-com.google.android.gms.internal.hm$a$a
-com.google.android.gms.internal.hn
-com.google.android.gms.internal.hn$a
-com.google.android.gms.internal.hn$a$a
-com.google.android.gms.internal.ho
-com.google.android.gms.internal.ho$a
-com.google.android.gms.internal.hq
-com.google.android.gms.internal.hs
-com.google.android.gms.internal.ht:
-    public abstract com.google.android.gms.internal.ht b(com.google.android.gms.internal.hq)
-    public static final com.google.android.gms.internal.ht a(com.google.android.gms.internal.ht,byte[])
-    public static final com.google.android.gms.internal.ht b(com.google.android.gms.internal.ht,byte[],int,int)
-com.google.android.gms.internal.hv:
-    static int bz(int)
-    public static int bA(int)
-    public static boolean a(com.google.android.gms.internal.hq,int)
+com.google.android.gms.internal.ir
+com.google.android.gms.internal.is
+com.google.android.gms.internal.is$a
+com.google.android.gms.internal.is$a$a
+com.google.android.gms.internal.it
+com.google.android.gms.internal.it$a
+com.google.android.gms.internal.it$a$a
+com.google.android.gms.internal.iu
+com.google.android.gms.internal.iu$a
+com.google.android.gms.internal.iw
+com.google.android.gms.internal.iy
+com.google.android.gms.internal.iz:
+    public abstract com.google.android.gms.internal.iz b(com.google.android.gms.internal.iw)
+    public static final com.google.android.gms.internal.iz a(com.google.android.gms.internal.iz,byte[])
+    public static final com.google.android.gms.internal.iz b(com.google.android.gms.internal.iz,byte[],int,int)
+com.google.android.gms.internal.jb:
+    static int bS(int)
+    public static int bT(int)
+    public static boolean a(com.google.android.gms.internal.iw,int)
 com.google.android.gms.internal.o
 com.google.android.gms.internal.o$a
 com.google.android.gms.internal.o$a$a
@@ -2394,6 +2656,7 @@ com.google.android.gms.location.DetectedActivityCreator:
     public static final int CONTENT_DESCRIPTION
 com.google.android.gms.location.Geofence
 com.google.android.gms.location.Geofence$Builder
+com.google.android.gms.location.GeofenceStatusCodes
 com.google.android.gms.location.LocationClient
 com.google.android.gms.location.LocationClient$OnAddGeofencesResultListener
 com.google.android.gms.location.LocationClient$OnRemoveGeofencesResultListener
@@ -2417,15 +2680,15 @@ com.google.android.gms.location.LocationRequest:
     public int getNumUpdates()
     public com.google.android.gms.location.LocationRequest setSmallestDisplacement(float)
     public float getSmallestDisplacement()
-    private static void i(long)
-    private static void aB(int)
+    private static void m(long)
+    private static void aO(int)
     private static void a(float)
 com.google.android.gms.location.LocationRequestCreator:
     public static final int CONTENT_DESCRIPTION
 com.google.android.gms.location.LocationStatusCodes
-com.google.android.gms.location.a
-com.google.android.gms.location.a$a
-com.google.android.gms.location.a$a$a
+com.google.android.gms.location.c
+com.google.android.gms.location.c$a
+com.google.android.gms.location.c$a$a
 com.google.android.gms.maps.CameraUpdate
 com.google.android.gms.maps.CameraUpdateFactory
 com.google.android.gms.maps.GoogleMap
@@ -2603,8 +2866,8 @@ com.google.android.gms.maps.model.LatLngBounds:
     public com.google.android.gms.maps.model.LatLng getCenter()
     private static double b(double,double)
     private static double c(double,double)
-    private boolean a(double)
-    private boolean b(double)
+    private boolean c(double)
+    private boolean d(double)
     static synthetic double d(double,double)
     static synthetic double e(double,double)
 com.google.android.gms.maps.model.LatLngBounds$Builder
@@ -2700,15 +2963,37 @@ com.google.android.gms.maps.model.internal.f$a
 com.google.android.gms.maps.model.internal.f$a$a
 com.google.android.gms.maps.model.internal.g$a:
     public g$a()
+com.google.android.gms.panorama.Panorama
+com.google.android.gms.panorama.Panorama$1
+com.google.android.gms.panorama.Panorama$2
+com.google.android.gms.panorama.Panorama$3
+com.google.android.gms.panorama.Panorama$PanoramaResult
+com.google.android.gms.panorama.Panorama$a
+com.google.android.gms.panorama.Panorama$b
+com.google.android.gms.panorama.Panorama$b$1
 com.google.android.gms.panorama.PanoramaClient
 com.google.android.gms.panorama.PanoramaClient$1
 com.google.android.gms.panorama.PanoramaClient$2
 com.google.android.gms.panorama.PanoramaClient$OnPanoramaInfoLoadedListener
-com.google.android.gms.panorama.a
-com.google.android.gms.panorama.a$1
-com.google.android.gms.panorama.a$a
-com.google.android.gms.panorama.a$b
+com.google.android.gms.plus.Account
+com.google.android.gms.plus.Moments
+com.google.android.gms.plus.Moments$LoadMomentsResult
+com.google.android.gms.plus.People
+com.google.android.gms.plus.People$LoadPeopleResult
+com.google.android.gms.plus.People$OrderBy
+com.google.android.gms.plus.Plus
+com.google.android.gms.plus.Plus$1
+com.google.android.gms.plus.Plus$PlusOptions
+com.google.android.gms.plus.Plus$PlusOptions$Builder
+com.google.android.gms.plus.Plus$a
 com.google.android.gms.plus.PlusClient
+com.google.android.gms.plus.PlusClient$1
+com.google.android.gms.plus.PlusClient$2
+com.google.android.gms.plus.PlusClient$3
+com.google.android.gms.plus.PlusClient$4
+com.google.android.gms.plus.PlusClient$5
+com.google.android.gms.plus.PlusClient$6
+com.google.android.gms.plus.PlusClient$7
 com.google.android.gms.plus.PlusClient$Builder
 com.google.android.gms.plus.PlusClient$OnAccessRevokedListener
 com.google.android.gms.plus.PlusClient$OnMomentsLoadedListener
@@ -2726,6 +3011,7 @@ com.google.android.gms.plus.PlusOneDummyView$c
 com.google.android.gms.plus.PlusOneDummyView$d
 com.google.android.gms.plus.PlusShare
 com.google.android.gms.plus.PlusShare$Builder
+com.google.android.gms.plus.a
 com.google.android.gms.plus.model.moments.ItemScope:
     public abstract com.google.android.gms.plus.model.moments.ItemScope getAbout()
     public abstract boolean hasAbout()
@@ -3078,6 +3364,16 @@ com.google.android.gms.wallet.ProxyCard:
     public java.lang.String getCvn()
     public int getExpirationMonth()
     public int getExpirationYear()
+com.google.android.gms.wallet.Wallet
+com.google.android.gms.wallet.Wallet$1
+com.google.android.gms.wallet.Wallet$2
+com.google.android.gms.wallet.Wallet$3
+com.google.android.gms.wallet.Wallet$4
+com.google.android.gms.wallet.Wallet$5
+com.google.android.gms.wallet.Wallet$6
+com.google.android.gms.wallet.Wallet$WalletOptions
+com.google.android.gms.wallet.Wallet$WalletOptions$Builder
+com.google.android.gms.wallet.Wallet$a
 com.google.android.gms.wallet.WalletClient
 com.google.android.gms.wallet.WalletConstants
 com.python4d.monsi.AutoResizeTextView
