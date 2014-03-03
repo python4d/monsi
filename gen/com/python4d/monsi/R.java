@@ -444,8 +444,8 @@ containing a value of this type.
         public static final int up=0x7f050005;
     }
     public static final class string {
-        public static final int action_aide=0x7f08001b;
-        public static final int aide=0x7f08001c;
+        public static final int action_aide=0x7f08001c;
+        public static final int aide=0x7f08001d;
         public static final int app_name=0x7f08001a;
         /**   Title for notification shown when GooglePlayServices needs to be
         enabled for a application to work. [CHAR LIMIT=70] 
@@ -470,7 +470,7 @@ containing a value of this type.
         [CHAR LIMIT=70] 
          */
         public static final int auth_client_using_bad_version_title=0x7f080014;
-        public static final int ca_app_pub=0x7f080021;
+        public static final int ca_app_pub=0x7f080022;
         /**  Button in confirmation dialog to enable Google Play services.  Clicking it
         will direct user to application settings of Google Play services where they
         can enable it [CHAR LIMIT=40] 
@@ -542,10 +542,11 @@ containing a value of this type.
         /**  Long form sign-in button text [CHAR LIMIT=30] 
          */
         public static final int common_signin_button_text_long=0x7f080013;
-        public static final int hello_world=0x7f08001d;
-        public static final int lancez_monsi_=0x7f08001e;
-        public static final int level_=0x7f08001f;
-        public static final int score_=0x7f080020;
+        public static final int hello_world=0x7f08001e;
+        public static final int lancez_monsi_=0x7f08001f;
+        public static final int level_=0x7f080020;
+        public static final int score_=0x7f080021;
+        public static final int versionName=0x7f08001b;
     }
     public static final class style {
         /** 

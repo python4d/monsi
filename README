@@ -3,6 +3,10 @@ Version Information:
 
 TODO: Gestion rotation tablette, enregistrement des 10 derniers scores,...
 
+v1.07:
+-Recompilation pour accepter l'API version 19.
+-Affichage de la versionName sur l'écran de jeu.
+
 v1.06:
 -Remplacement de MediaPlayer par SoundPool pour meilleur fluidité
 

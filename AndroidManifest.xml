@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.python4d.monsi"
-    android:versionCode="6"
-    android:versionName="1.06" >
+    android:versionCode="7"
+    android:versionName="@string/versionName" >
 
    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
     <uses-sdk
         android:minSdkVersion="4"
-        android:targetSdkVersion="13" 
-        android:maxSdkVersion="18"/>
+        android:maxSdkVersion="19"/>
 
     <application
         android:allowBackup="true"

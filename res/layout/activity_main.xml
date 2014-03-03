@@ -65,7 +65,12 @@
                     android:progress="50"
                     android:scrollbarStyle="outsideInset" />
             </LinearLayout>
-
+<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1" >
             <TextView
                 android:id="@+id/textWebPython"
                 android:layout_width="wrap_content"
@@ -76,6 +81,19 @@
                 android:text="(c) Python4D"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textSize="@dimen/small_8dp" />
+
+                        <TextView
+                            android:id="@+id/textWebPython"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:gravity="bottom|right"
+                            android:text="@string/versionName"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textSize="@dimen/small_8dp" />
+
+            </LinearLayout>
 
         </LinearLayout>
     </FrameLayout>
