@@ -1,6 +1,4 @@
 android.UnusedStub
-android.annotation.SuppressLint
-android.annotation.TargetApi
 android.support.v4.accessibilityservice.AccessibilityServiceInfoCompat
 android.support.v4.accessibilityservice.AccessibilityServiceInfoCompat$AccessibilityServiceInfoIcsImpl
 android.support.v4.accessibilityservice.AccessibilityServiceInfoCompat$AccessibilityServiceInfoJellyBeanMr2
@@ -785,7 +783,6 @@ android.support.v4.view.ViewPager:
     2299:2320:public void endFakeDrag()
     2330:2368:public void fakeDragBy(float)
     2380:2380:public boolean isFakeDragging()
-    2424:2435:public boolean canScrollHorizontally(int)
     84:84:static synthetic void access$000(android.support.v4.view.ViewPager,int)
     84:84:static synthetic android.support.v4.view.PagerAdapter access$200(android.support.v4.view.ViewPager)
     84:84:static synthetic int access$300(android.support.v4.view.ViewPager)
@@ -2089,8 +2086,6 @@ com.google.android.gms.internal.bg:
     public static int a(com.google.ads.AdRequest$ErrorCode)
     public static final com.google.ads.AdRequest$ErrorCode h(int)
 com.google.android.gms.internal.bg$1
-com.google.android.gms.internal.da:
-    public void onShowCustomView(android.view.View,int,android.webkit.WebChromeClient$CustomViewCallback)
 com.google.android.gms.internal.db
 com.google.android.gms.internal.dc
 com.google.android.gms.internal.dc$a

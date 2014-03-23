@@ -912,15 +912,15 @@ android.support.v4.view.ViewPager -> android.support.v4.view.ViewPager:
     boolean mCalledSuper -> U
     int mDecorChildCount -> V
     android.support.v4.view.ViewPager$OnPageChangeListener mOnPageChangeListener -> W
-    android.support.v4.view.ViewPager$OnPageChangeListener mInternalPageChangeListener -> X
-    android.support.v4.view.ViewPager$OnAdapterChangeListener mAdapterChangeListener -> Y
-    android.support.v4.view.ViewPager$PageTransformer mPageTransformer -> Z
-    java.lang.reflect.Method mSetChildrenDrawingOrderEnabled -> aa
-    int mDrawingOrder -> ab
-    java.util.ArrayList mDrawingOrderedChildren -> ac
-    android.support.v4.view.ViewPager$ViewPositionComparator sPositionComparator -> ad
-    java.lang.Runnable mEndScrollRunnable -> ae
-    int mScrollState -> af
+    android.support.v4.view.ViewPager$OnPageChangeListener mInternalPageChangeListener -> Z
+    android.support.v4.view.ViewPager$OnAdapterChangeListener mAdapterChangeListener -> aa
+    android.support.v4.view.ViewPager$PageTransformer mPageTransformer -> ab
+    java.lang.reflect.Method mSetChildrenDrawingOrderEnabled -> ac
+    int mDrawingOrder -> ad
+    java.util.ArrayList mDrawingOrderedChildren -> ae
+    android.support.v4.view.ViewPager$ViewPositionComparator sPositionComparator -> af
+    java.lang.Runnable mEndScrollRunnable -> ag
+    int mScrollState -> ah
     void onDetachedFromWindow() -> onDetachedFromWindow
     void setScrollState(int) -> setScrollState
     void setAdapter(android.support.v4.view.PagerAdapter) -> setAdapter
@@ -982,6 +982,7 @@ android.support.v4.view.ViewPager -> android.support.v4.view.ViewPager:
     void onSecondaryPointerUp(android.view.MotionEvent) -> a
     void endDrag() -> i
     void setScrollingCacheEnabled(boolean) -> setScrollingCacheEnabled
+    boolean canScrollHorizontally(int) -> canScrollHorizontally
     boolean canScroll(android.view.View,boolean,int,int,int) -> a
     boolean dispatchKeyEvent(android.view.KeyEvent) -> dispatchKeyEvent
     boolean executeKeyEvent(android.view.KeyEvent) -> a
@@ -4189,6 +4190,7 @@ com.google.android.gms.internal.d -> com.google.android.gms.internal.fn:
     void a(android.view.MotionEvent) -> a
     void a(int,int,int) -> a
 com.google.android.gms.internal.da -> com.google.android.gms.internal.fo:
+    void onShowCustomView(android.view.View,int,android.webkit.WebChromeClient$CustomViewCallback) -> onShowCustomView
 com.google.android.gms.internal.dh -> com.google.android.gms.internal.fp:
     boolean a(java.lang.Object,java.lang.Object) -> a
 com.google.android.gms.internal.dq -> com.google.android.gms.internal.fq:

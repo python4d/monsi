@@ -3,6 +3,12 @@ Version Information:
 
 TODO: Gestion rotation tablette, enregistrement des 10 derniers scores,...
 
+v1.09:
+-Son par defaut des 9 boutons désactivés
+
+v1.08:
+-Compatibilité Tablette: ajout dans manifest des ecrans et modification de maxsdk par targetsdk
+
 v1.07:
 -Recompilation pour accepter l'API version 19.
 -Affichage de la versionName sur l'écran de jeu.
@@ -23,6 +29,7 @@ v1.04:
 
 
 v1.03b: 
-Version corrigeant le bug spécial Samsung (MonSi marche partout sur tous les émulteurs soft mais pas sur le hardware Samsung)
+Version corrigeant le bug spécial Samsung (MonSi marche partout sur tous les émulateurs soft mais pas sur le hardware Samsung)
 Utilisation de SAMSUNG Remote Test Lab: http://developer.samsung.com/remotetestlab/rtlDeviceList.action qui permet de tester sur du vrai hard.
 Explication du bug : http://stackoverflow.com/questions/6682730/android-android-view-inflateexception-binary-xml-file-line-13-error-inflatin
+					"Basically, it seems that Samsung Galaxy S has an EditText implementation whose inflation can only be done in the UI Thread."

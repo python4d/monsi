@@ -701,6 +701,7 @@ com.python4d.monsi.R$string: int hello_world
 com.python4d.monsi.R$string: int lancez_monsi_
 com.python4d.monsi.R$string: int level_
 com.python4d.monsi.R$string: int score_
+com.python4d.monsi.R$string: int versionName
 com.python4d.monsi.R$style: int AppBaseTheme
 com.python4d.monsi.R$style: int AppTheme
 com.python4d.monsi.R$style: int CoolButton

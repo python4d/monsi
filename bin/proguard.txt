@@ -1,10 +1,10 @@
-# view AndroidManifest.xml #generated:20
+# view AndroidManifest.xml #generated:28
 -keep class com.google.android.gms.ads.AdActivity { <init>(...); }
 
 # view res/layout/activity_main.xml #generated:353
 -keep class com.google.android.gms.ads.AdView { <init>(...); }
 
-# view AndroidManifest.xml #generated:22
+# view AndroidManifest.xml #generated:31
 -keep class com.python4d.monsi.MainActivity { <init>(...); }
 
 # onClick res/menu/main.xml #generated:3

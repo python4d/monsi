@@ -13,6 +13,7 @@ import android.os.Handler;
 import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.KeyEvent;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -23,6 +24,7 @@ import android.view.animation.Animation;
 import android.view.animation.Animation.AnimationListener;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.TextView;
@@ -66,6 +68,11 @@ public class MainActivity extends Activity {
         // change the music vol instead of ringtone vol
         // when hardware volume buttons are pressed
         setVolumeControlStream(AudioManager.STREAM_MUSIC);
+        //récupérer la view global et mettre le son par defaut des boutons
+		LayoutInflater inflater = getLayoutInflater();
+		View l = inflater.inflate(R.layout.activity_main,null);
+		l.setSoundEffectsEnabled(true);
+        
         
         //récupérer le highscore local du téléphone
         preferences = PreferenceManager.getDefaultSharedPreferences(this);
@@ -77,7 +84,7 @@ public class MainActivity extends Activity {
         ftp=(FTPConnect) new FTPConnect(this).execute( highscore[0],highscore[1]);
         
 		setContentView(R.layout.activity_main);
-
+		
 		try{
 			if (pub) {
 				AdView adView = (AdView)this.findViewById(R.id.adView);
@@ -119,6 +126,9 @@ public class MainActivity extends Activity {
 		boutonsNomis[6] = (Button) findViewById(R.id.Button06);
 		boutonsNomis[7] = (Button) findViewById(R.id.Button07);
 		boutonsNomis[8] = (Button) findViewById(R.id.Button08);
+		//désactivez le son des 9 boutons 
+		for (Button i:boutonsNomis)
+			i.setSoundEffectsEnabled(false);
 
 		AnimationUtils.loadAnimation(this, R.anim.anim_bouton);
 		animBoutonRetourne = AnimationUtils.loadAnimation(this, R.anim.anim_bouton_retourne);
